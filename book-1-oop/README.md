@@ -1,10 +1,12 @@
-# Object Oriented Programming
+# Intro to Object Oriented Programming
 
-These chapters will let you explore more fundamental concepts about object oriented programming in Python.
+Before you begin work on this project, please read the [Object-Oriented Programming in Python](https://realpython.com/python3-object-oriented-programming/). It provides a wonderful, high-level overview of the terms, the syntax and the concepts behind OOP. We also recommend that you bookmark that article for future reference.
+
+After reading the above article, you can practice your Python in the context of learning how to create your own custom types, and learn the basics of inheritance.
 
 | # | 🐑 🦆 <br/> Critters and Croquettes |
 |--|--|
-| 1 | [Meeting Bobby Kawlins][1] <br/> <sub style="font-size:0.85rem;"></sub> |
+| 1 | [Meeting Bobby Kawlins][1] |
 | 2 | [Critter Creation][2] <br/> <sub style="font-size:0.85rem;">\#classes</sub> |
 | 3 | [Condensed Critter Creation][3] <br/> <sub style="font-size:0.85rem;">\#classes</sub> |
 | 4 | [Packaging Animals for Transport][4] <br/> <sub style="font-size:0.85rem;">\#packages</sub> |
@@ -15,6 +17,13 @@ These chapters will let you explore more fundamental concepts about object orien
 | 9 | [Eliminating Class Waste][9] <br/> <sub style="font-size:0.85rem;">\#inheritance</sub> |
 | 10 | [Complex, Clean Critter Classes][10] <br/> <sub style="font-size:0.85rem;">\#inheritance #multiple</sub> |
 | 11 | [If it Honks Like a Goose][11] <br/> <sub style="font-size:0.85rem;">\#typing</sub> |
+
+Once you have completed the project, your job is to do a self-assessment. This is truly a self-assessment, as you will need to reflect on what you learned in this project.
+
+| #   | 🎓 Self-Assessment |
+| --- | ------------------ |
+| 1   | [Self-Assess Your Debugging Skills](./chapters/SELF_ASSESSMENT.md) |
+
 
 
 [1]:	./chapters/CC_PROJECT_SETUP.md

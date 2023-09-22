@@ -123,3 +123,4 @@ It will be...disappointing. You should see something like this:
 
 What the heck is that? Your instructors will explain this in more detail, and will eventually show you a trick for getting a more human-readable output. For now, just note that you can't log out a Python object the way you could a Javascript object, and try `print(miss_fuzz.name)` as a temporary solution.
 
+[Move to next chapter >](./CC_CONSTRUCTORS.md)

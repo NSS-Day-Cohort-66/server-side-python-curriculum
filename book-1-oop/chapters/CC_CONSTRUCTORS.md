@@ -37,3 +37,5 @@ Refactor your critter classes to make your `__init__` method accept two argument
 2. `species`
 
 Once defined this way, you can send those values as arguments when you create each instance.
+
+[Move to next chapter >](./CC_PACKAGES.md)

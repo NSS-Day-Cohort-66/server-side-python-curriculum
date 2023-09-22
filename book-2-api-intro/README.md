@@ -1,11 +1,20 @@
-# Book 1 - Python Kennels
+# Book 1 - Building Your Own API
 
-## 🍎 Required Core Chapters
+## Introduction to SQL
 
-| # | 🐕 🐩 <br/> Python Kennels<br/><sub>(_Guided Tour_)</sub> | 💎 💍  <br/> Kneel Diamonds<br/><sub>_(Guided Practice)_</sub> |
+Before you start building projects that serve as APIs for your client code to interact with, you need to learn the basics of SQL first.
+
+| # | 🎥 SQL |
+|--|--|
+| 1 | [Khan Academy: Intro to SQL][1] |
+| 2 | [SQL Bolt: Beginner SQL Tutorial][11] |
+
+## Introduction to APIs
+
+Now that you have had an introduction to SQL, it's time to combine your nascent understanding of Python and SQL and start building your first APIs.
+
+| # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API<br/><sub>(_Declarative Code_)</sub> |
 |--|--|---|
-| 💻 | [Installations for Mac][1] | |
-| 💻 | [Installations for WSL and Ubuntu][2] | |
 | 🐞 | [Debugging Python in Visual Studio Code][3] | |
 | 1 | [Request and Response][4] <br/> <sub style="font-size:0.85rem;">\#overview #pipenv</sub> | [Review ERD][12] |
 | 2 | [Animals Module and Data][5] <br/> <sub style="font-size:0.85rem;">\#packages #modules #lists #dictionaries</sub> | [Kneel Diamonds Data ][13] |
@@ -15,13 +24,6 @@
 | 6 | [Animal Status][9] <br/> <sub style="font-size:0.85rem;">\#HTTP\_PUT #for\_loop #enumerate</sub> | [Change an Order][17] |
 | 7 | [Animal Class][10] <br/> <sub style="font-size:0.85rem;">\#classes</sub> | [Defining Jewelry Classes][18] |
 | Interlude: SQL | [SQL Bolt: Beginner SQL Tutorial][11] |  |
-
-## 👩‍👩‍👧‍👦 Team Collaboration Projects
-
-| # | Project Name | Summary |
-|--|--|--|
-| 1 | Brewed Awakenings | You will collaboratively design and build a simple API for the Brewed Awakenings client application that you worked on in the client-side course. |
-| 2 | Buttons the Clown | You will collaboratively design and build an API as the replacement for `json-server` that you used for the eponymous client-side project. When complete, your client-side project should work with this API.  |
 
 ## 🧭 Explorer Chapters
 
@@ -34,6 +36,7 @@ Explorer chapters are optional and give you the opportunity to expand on the Cor
 | 3 | [Invalid Animal][25] | [Incomplete Order][26] |
 | 4 | [You Are a Customer Forever][27] | [Protect the Inventory][28] |
 
+
 ## 🏕 Pioneer Chapters
 
 Pioneer chapters are optional let you develop Deep Learning on the concepts that you practiced in this book. Be prepared to quickly reach the limit of your capabilities, and stretch your Web researching skills, and asking good questions.
@@ -43,16 +46,7 @@ Pioneer chapters are optional let you develop Deep Learning on the concepts that
 | 1 | 🌵 [Keep the Kennels Dry][23] |  |
 | 2 | 👁 [One Module to Rule Them All][24] | 👑 [Sovereign of Modules and Logic][29] |
 
-## 🔐 Deep Learning Projects Unlocked
-
-| # | Project&nbsp;Name | Description |
-|--|--|--|
-|1| Pen Pal Society API | In the client-side course, you built a JavaScript application called **The Pen Pal Society** as the self-assessment for one of the books. In this project, you will build a basic API that will replace `json-server` as the server. <br/><br/> When done, your self-assessment should work with zero changes to the client-side code. |
-
-
-
-[1]:	./chapters/mac_installs.md
-[2]:	./chapters/windows_installs.md
+[1]:    https://www.khanacademy.org/computing/computer-programming/sql
 [3]:	./chapters/DEBUGGING_PYTHON.md
 [4]:	./chapters/PK_INTRO_SETUP.md
 [5]:	./chapters/PK_PACKAGES_INTRO.md

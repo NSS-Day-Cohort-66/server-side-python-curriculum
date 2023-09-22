@@ -1,6 +1,6 @@
 # Critters and Croquettes: Day 8
 
->You bolt awake, covered in a cold sweat. As you sigh in relief that it was all just a dream, you realize something almost as scary: it could really happen! Just yesterday you were testing your code and you put an alligator in the petting zoo without a second thought. But alligators belong in Critter Cove, not Varmint Village. Right now, there's no limit to the type of animals that get placed in an attraction. 
+>You bolt awake, covered in a cold sweat. As you sigh in relief that it was all just a dream, you realize something almost as scary: it could really happen! Just yesterday you were testing your code and you put an alligator in the petting zoo without a second thought. But alligators belong in Critter Cove, not Varmint Village. Right now, there's no limit to the type of animals that get placed in an attraction.
 >
 >In Python, lists can contain any combination of object types. A single list could contain an integer, a boolean, and a string. This means that the `animals` attribute of your attractions classes can contain **any** critter type, regardless of whether it belongs there.
 >
@@ -20,7 +20,7 @@ class PettingZoo(Attraction):
 
     def __init__(self, name, description):
         super().__init__(name, description)
-    
+
     # Number 1: Duck typing check
     def add_animal_pythonic(self, animal):
         try:
@@ -91,3 +91,6 @@ Dolly the miniature llama
 
 ## Practice: Birds of a Feather, Snakes of a Scale?
 Refactor all of your attraction classes to check for the proper property before allowing the critter object to be added to its `animal` list.
+
+
+[Move to Self Assessment >](./SELF_ASSESSMENT.md)

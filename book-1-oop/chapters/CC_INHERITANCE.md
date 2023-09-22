@@ -6,9 +6,9 @@
 >
 >You chuckle thinking about whether that's a blessing or a curse for little Bobbi-Jean. Then your eyes fall back to a particular word in the caption: "inherit". Something clicks in your mind and you swivel back to your code.
 >
->Inheritance! That's it! That weird feeling you've had in the pit of your stomach that something wasn't quite right with your approach to all those critter classes. It wasn't just you breathing in the smell of too many farm animals. 
+>Inheritance! That's it! That weird feeling you've had in the pit of your stomach that something wasn't quite right with your approach to all those critter classes. It wasn't just you breathing in the smell of too many farm animals.
 >
->All the repetition in your code; the sense that it wasn't DRY enough; the pain of constant refactoring -- it could all be lessened greatly by using inheritance, a mechanism in Object Oriented Programming that's perfect for just this kind of situation. 
+>All the repetition in your code; the sense that it wasn't DRY enough; the pain of constant refactoring -- it could all be lessened greatly by using inheritance, a mechanism in Object Oriented Programming that's perfect for just this kind of situation.
 >
 >You think back to your time at NSS and the incredibly wise, insightful words of your brilliant -- yet humble -- instructors...
 
@@ -18,7 +18,7 @@ Class based inheritance lets you specify that one type will contain **all** of t
 
 ### Why Are You Learning This?
 
-You will use inheritance to reduce the amount of duplicated code that can arise in a system with dozens of types that all share the **exact** same properties and/or methods. It's one of the mechanisms to introduce polymorphism into a program. 
+You will use inheritance to reduce the amount of duplicated code that can arise in a system with dozens of types that all share the **exact** same properties and/or methods. It's one of the mechanisms to introduce polymorphism into a program.
 
 _( Admit it, you were about to just keep on reading without asking what polymorphism is, weren't you? Go ahead. Look it up. We'll wait. This [article](https://www.programiz.com/python-programming/polymorphism) is especially easy to read. Later in the chapter you'll see a small example of it in action )_
 
@@ -136,11 +136,11 @@ class Animal:
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-    
+
     @property
     def chip_number(self):
         return self.__chip_number
-    
+
     @chip_number.setter
     def chip_number(self, num):
         pass
@@ -159,10 +159,10 @@ class Llama:
         self.food = food
         self.__chip_number = chip_num
         self.walking = True
-    
+
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-  
+
     ...
 ```
 **After:**
@@ -176,7 +176,7 @@ class Llama(Animal):
         self.shift = shift # stays on Llama because not all animals have shifts
         self.walking = True
 ```
-Luckily, the syntax for making a llama object stays exactly the same: 
+Luckily, the syntax for making a llama object stays exactly the same:
 
 ```py
 stinky = Llama("Stinky", "domestic llama", "afternoon", "barley hay")
@@ -190,27 +190,27 @@ Some things to note about these changes:
 3. Notice that we did not directly use **`Animal`** to make our llama object. At no point will you ever directly instantiate a base class. Instances are always created from the child class.
 
 ### Practice: The Great Inheritance Overhaul
-You know the drill by now! It's time to refactor all of your classes. This time it's in the name of not having to spend so much time refactoring your classes in the future. 
-1. Start by defining **`Animal`** at the top of `animals.py`. 
+You know the drill by now! It's time to refactor all of your classes. This time it's in the name of not having to spend so much time refactoring your classes in the future.
+1. Start by defining **`Animal`** at the top of `animals.py`.
 1. Work your way through your critters to evolve them into its children.
 
 ## Overriding Parent Behavior
 
-Earlier in this chapter you may remember a mention of polymorphism. In a very small nutshell polymorphism means the ability to take various forms. Sounds like Invasion of the Body Snatchers, but this example shows how that can be expressed in Python.  
+Earlier in this chapter you may remember a mention of polymorphism. In a very small nutshell polymorphism means the ability to take various forms. Sounds like Invasion of the Body Snatchers, but this example shows how that can be expressed in Python.
 
-You've now seen how to inherit common properties from a parent class. Each child class of **`Animal`**, for example can call `feed()` because they automatically inherit it. This is great for when the act of feeding a critter is exactly the same for every critter type. But it's not ideal if you have an outlier or two that require a different behavior for the same action of 'feeding'. 
+You've now seen how to inherit common properties from a parent class. Each child class of **`Animal`**, for example can call `feed()` because they automatically inherit it. This is great for when the act of feeding a critter is exactly the same for every critter type. But it's not ideal if you have an outlier or two that require a different behavior for the same action of 'feeding'.
 
 Let's use our **`Llama`** class again. Let's say that Bobby's llamas are a bit skittish and won't eat unless they feel calm and safe. Bobby has found that singing "Rockytop" to them somehow calms them down, and they then gobble all their Llama Chow. Feeding a llama, then, requires an extra step.
 
 So, if feeding a llama is an action unique to a llama, you might decide that the key is to define a method directly on **`Llama`** to describe the action of feeding a llama. And you'd be right!
 
-And that function's behavior could be 
+And that function's behavior could be
 ```py
 print(f'on {date.today()}, {self.name} had "Rockytop" sung to it so it would eat its {self.food}')
 ```
-That way only llamas get fed while singing to them. The question is, what do you name that function? `feed_llama`? Nope. Actually, you would name it `feed`. By giving it exactly the same name as **`Animal`**'s method for feeding _all_ animals, you then **_override_** the default logic.  
+That way only llamas get fed while singing to them. The question is, what do you name that function? `feed_llama`? Nope. Actually, you would name it `feed`. By giving it exactly the same name as **`Animal`**'s method for feeding _all_ animals, you then **_override_** the default logic.
 
-[Method overriding](https://en.wikipedia.org/wiki/Method_overriding), in object-oriented programming, is a language feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its superclasses (parent classes). 
+[Method overriding](https://en.wikipedia.org/wiki/Method_overriding), in object-oriented programming, is a language feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its superclasses (parent classes).
 
 Now, `feed` has multiple forms, but is implemented differently in different contexts using method overriding. That's polymorphism, and it's really cool and powerful. (Got your attention now? Here's that [article](https://www.programiz.com/python-programming/polymorphism) again.)
 
@@ -255,6 +255,9 @@ Now the Tesla will make a different noise.
 Also read [Method Overriding in Python](https://www.studytonight.com/python/method-overriding-in-python).
 
 ### Practice: Pacify Your Picky Eaters
-Customize the way some of your critters are fed. Use method overriding to define a more specific `feed` behavior on three of your child classes. 
+Customize the way some of your critters are fed. Use method overriding to define a more specific `feed` behavior on three of your child classes.
 
 If you're feeling experimental, see what happens when you don't name your method feed. Call it `feed_llama` for example. What happens when you call it? Can you still call `feed`, too? What happens? Can you think why that might be problematic? Discuss that with your classmates, or ping an instructor with your thoughts.
+
+
+[Move to next chapter >](./CC_MULTIPLE_INHERITANCE.md)

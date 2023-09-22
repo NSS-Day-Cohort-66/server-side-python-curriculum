@@ -10,11 +10,11 @@
 >
 >"So, I'm glad you're here. I'd like to have a way to record the chip number for a critter. Whatta you say?"
 >
->"I say we can do that," you...say. 
+>"I say we can do that," you...say.
 >
->A few thoughts come to mind as you visualize adding a `chip_number` property to your critter classes.  
->#1. You should make sure the value is always input as a number, not a string, just to be consistent and predictable.  
->#2. Once a chip is added to an animal, that number is permanent and won't need to change.  
+>A few thoughts come to mind as you visualize adding a `chip_number` property to your critter classes.
+>#1. You should make sure the value is always input as a number, not a string, just to be consistent and predictable.
+>#2. Once a chip is added to an animal, that number is permanent and won't need to change.
 >#3. You're really glad you're not the employee who has to figure out how to microchip a copperhead.
 
 ## re: thought #1 -- Enforcing Python Class Property Values
@@ -40,7 +40,7 @@ kite.price = dict()  # No complaints here
 kite.description = 1024  # Python don't care
 ```
 
-Since Python is dynamically typed, simple attributes have no way of enforcing what value they accept. Fortunately, the language provides a way for you to check and enforce value restrictions - the `@property` decorator. 
+Since Python is dynamically typed, simple attributes have no way of enforcing what value they accept. Fortunately, the language provides a way for you to check and enforce value restrictions - the `@property` decorator.
 
 >Wait, what the heck is a 'decorator' you say? For now, focus on the concept of what is happening here and how to implement it. In an upcoming chapter your instructor will dive into the why/what/how of deocorators.
 
@@ -62,7 +62,7 @@ class Product:
             raise TypeError('Please provide a floating point value for the price')
 ```
 
-Now you have set a type check on what the value of the `price` attribute can be. 
+Now you have set a type check on what the value of the `price` attribute can be.
 
 ```py
 prod = Product()
@@ -81,11 +81,11 @@ Now set the value to a floating point decimal.
 ```py
 prod.price = 1.0 # Everything works ok
 ```
-Did you notice the added bonus of using @property? You simply access the property name with good old dot notation. 
+Did you notice the added bonus of using @property? You simply access the property name with good old dot notation.
 
 ```py
 prod.price
-``` 
+```
 
 It's like magic ✨
 
@@ -109,9 +109,9 @@ print(dir(prod))
 
 
 ## re: thought #2 -- Read-Only Variables
-@property decorators can also be used to make a property essentially read-only. "Essentially" meaning there's no such thing as a truly unchangeable attribute, but as you saw above, the double underscore syntax helps hide a value from direct access via typical `foo.attr` syntax. 
+@property decorators can also be used to make a property essentially read-only. "Essentially" meaning there's no such thing as a truly unchangeable attribute, but as you saw above, the double underscore syntax helps hide a value from direct access via typical `foo.attr` syntax.
 
-Say a product, upon instantiation, can be given a serial number. This would typically never need to change, but would be something you would want to be able to output with a simple `foo.serial_num`. 
+Say a product, upon instantiation, can be given a serial number. This would typically never need to change, but would be something you would want to be able to output with a simple `foo.serial_num`.
 
 ```py
 class Product:
@@ -155,9 +155,9 @@ print(finn.chip_number)
 ## But Wait, There's More!
 Another helpful use for a getter is to create dynamic properties, meaning the ability to output a value as if it were an actual property on the object, but it's really calculated at the moment it's asked for.
 
-A common use case would be a person's name.  
+A common use case would be a person's name.
 
-There are a number of reasons why it makes sense to define a **`Person`** class with both `first_name` and `last_name` properties. Alphabetizing a whole collection of objects by last name is an obvious one. But, when using an object to output a human-readable name, it's a bit of a pain to concat `person.first_name` and `person.last_name` every time instead of `person.full_name`, right? 
+There are a number of reasons why it makes sense to define a **`Person`** class with both `first_name` and `last_name` properties. Alphabetizing a whole collection of objects by last name is an obvious one. But, when using an object to output a human-readable name, it's a bit of a pain to concat `person.first_name` and `person.last_name` every time instead of `person.full_name`, right?
 
 Yet, physically adding a `full_name` property is redundant. You wouldn't ask someone filling out a form to type both their first, last, and full name. And think about how much space in a database that duplicate data would take up!
 
@@ -168,7 +168,7 @@ class Person:
     def __init__(self, first, last):
         self.first_name = first
         self.last_name = last
-    
+
     @property
     def full_name():
         return f'{self.first_name} {self.last_name}'
@@ -197,3 +197,6 @@ slither_inn.add_animal(shalene)
 print(slither_inn.last_critter_added)
 # prints Shalene the rat snake
 ```
+
+
+[Move to next chapter >](./CC_INHERITANCE.md)

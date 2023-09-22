@@ -11,3 +11,5 @@ Lets build some classes for a business that's poised to become the #1 tourist tr
 > You nod and smile. "Sounds great," you say. "Sounds like you want to be able to keep records of your current animals, but also be able to add more as you acquire them."
 >
 > "Exactly!" says Bobby.
+
+[Move to next chapter >](./CC_CLASSES.md)

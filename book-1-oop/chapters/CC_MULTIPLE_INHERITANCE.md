@@ -292,3 +292,6 @@ You now have one goose in the petting zoo. Continue testing the creation of attr
 >The shadow of Bobby Andrew Kawlins falls on you...
 
 To be continued
+
+
+[Move to next chapter >](./CC_DUCK_TYPING.md)

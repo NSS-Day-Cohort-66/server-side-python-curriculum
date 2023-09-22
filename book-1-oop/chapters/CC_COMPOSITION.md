@@ -16,9 +16,9 @@
 
 Up to this point, although you have made a whole pile of different classes, you haven't had to worry about how types can relate to each other. But if you think about your experience with objects and data from the front end, you know that data relationships are critical to building applications of any complexity.
 
-Now that Critters and Croquettes is exapanding into multiple animal attractions, this is a great time to expand your use of the class syntax to represent different real-world entities that have a relationship with each other.  
+Now that Critters and Croquettes is exapanding into multiple animal attractions, this is a great time to expand your use of the class syntax to represent different real-world entities that have a relationship with each other.
 
-Start with the original attraction, the petting zoo. A llama or a miniature horse will never end up in the wetlands or the snake pit. But the petting zoo has many different animals in it. This is a one-to-many relationship. 
+Start with the original attraction, the petting zoo. A llama or a miniature horse will never end up in the wetlands or the snake pit. But the petting zoo has many different animals in it. This is a one-to-many relationship.
 
 In Python, you can establish this relationship by defining a list on the petting zoo object that will contain instances of critters. Consider the following code.
 
@@ -49,7 +49,7 @@ class Burro:
         self.date_added = date.today()
         self.walking = True
         self.food = food
-    
+
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 ```
@@ -99,8 +99,10 @@ Varmint Village is where you'll find cute and fuzzy critters to cuddle, like
 ```
 
 ### Practice: Modularize it
-Your original `animals.py` file must be getting gigantic by now. If you haven't already, get started with modularizing your code. Add additional files called `attractions.py` and `index.py`. 
+Your original `animals.py` file must be getting gigantic by now. If you haven't already, get started with modularizing your code. Add additional files called `attractions.py` and `index.py`.
 
-It's fairly obvious that your attractions classes should move to `attractions.py`. But what might you move into `index.py`? The single responsibility principle still applies here in Python land. If some modules contain type declarations ( your classes ), should those same modules be responsible for creating instance objects, too? 
+It's fairly obvious that your attractions classes should move to `attractions.py`. But what might you move into `index.py`? The single responsibility principle still applies here in Python land. If some modules contain type declarations ( your classes ), should those same modules be responsible for creating instance objects, too?
 
 Probably not. There's your hint. Go for it. And ask for help if we just melted your brain. You might run your refactored, modularized code by an instructor regardless.
+
+[Move to next chapter >](./CC_GETTER_SETTER.md)
