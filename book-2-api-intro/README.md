@@ -16,8 +16,8 @@ Now that you have had an introduction to SQL, it's time to combine your nascent 
 | # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API<br/><sub>(_Declarative Code_)</sub> |
 |--|--|---|
 | 🐞 | [Debugging Python in Visual Studio Code][3] | |
-| 1 | [Request and Response][4] <br/> <sub style="font-size:0.85rem;">\#overview #pipenv</sub> | [Review ERD][12] |
-| 2 | [Animals Module and Data][5] <br/> <sub style="font-size:0.85rem;">\#packages #modules #lists #dictionaries</sub> | [Kneel Diamonds Data ][13] |
+| 1 | [Getting the Code][4]| [Review ERD][12] |
+| 2 | [Exploring the API][5] | [Kneel Diamonds Data ][13] |
 | 3 |  [Animal Response][6] <br/> <sub style="font-size:0.85rem;">\#HTTP\_GET #functions #for\_loop #if</sub> | [Single Resources][14] |
 | 4 | [Adding Animals][7] <br/> <sub style="font-size:0.85rem;">\#HTTP\_POST</sub> | [Place New Order][15] |
 | 5 | [Discharging Animals][8] <br/> <sub style="font-size:0.85rem;">\#for\_loop #enumerate #pop()</sub> |  [Cancel an Order][16] |
@@ -48,8 +48,8 @@ Pioneer chapters are optional let you develop Deep Learning on the concepts that
 
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
 [3]:	./chapters/DEBUGGING_PYTHON.md
-[4]:	./chapters/PK_INTRO_SETUP.md
-[5]:	./chapters/PK_PACKAGES_INTRO.md
+[4]:	./chapters/SS_API_IMPERATIVE_CLONE.md
+[5]:	./chapters/SS_API_IMPERATIVE_INTRO.md
 [6]:	./chapters/PK_ANIMAL_RESOURCE.md
 [7]:	./chapters/PK_CREATE_ANIMAL.md
 [8]:	./chapters/PK_DELETE_ANIMAL.md
