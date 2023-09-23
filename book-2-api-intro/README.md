@@ -16,14 +16,13 @@ Now that you have had an introduction to SQL, it's time to combine your nascent 
 | # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API<br/><sub>(_Declarative Code_)</sub> |
 |--|--|---|
 | 🐞 | [Debugging Python in Visual Studio Code][3] | |
-| 1 | [Getting the Code][4]| [Review ERD][12] |
-| 2 | [Exploring the API][5] | [Kneel Diamonds Data ][13] |
-| 3 |  [Animal Response][6] <br/> <sub style="font-size:0.85rem;">\#HTTP\_GET #functions #for\_loop #if</sub> | [Single Resources][14] |
-| 4 | [Adding Animals][7] <br/> <sub style="font-size:0.85rem;">\#HTTP\_POST</sub> | [Place New Order][15] |
-| 5 | [Discharging Animals][8] <br/> <sub style="font-size:0.85rem;">\#for\_loop #enumerate #pop()</sub> |  [Cancel an Order][16] |
-| 6 | [Animal Status][9] <br/> <sub style="font-size:0.85rem;">\#HTTP\_PUT #for\_loop #enumerate</sub> | [Change an Order][17] |
-| 7 | [Animal Class][10] <br/> <sub style="font-size:0.85rem;">\#classes</sub> | [Defining Jewelry Classes][18] |
-| Interlude: SQL | [SQL Bolt: Beginner SQL Tutorial][11] |  |
+| 1 | [Get the Code][4]| [Review ERD][12] |
+| 2 | [Create the Database][5] | [Kneel Diamonds Data ][13] |
+| 3 |  [Exploring the API][6] | [Single Resources][14] |
+| 4 | [API Sequence Diagram][7] | [Place New Order][15] |
+| 5 | [Discharging Animals][8] |  [Cancel an Order][16] |
+| 6 | [Animal Status][9] | [Change an Order][17] |
+| 7 | [Animal Class][10] | [Defining Jewelry Classes][18] |
 
 ## 🧭 Explorer Chapters
 
@@ -49,9 +48,9 @@ Pioneer chapters are optional let you develop Deep Learning on the concepts that
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
 [3]:	./chapters/DEBUGGING_PYTHON.md
 [4]:	./chapters/SS_API_IMPERATIVE_CLONE.md
-[5]:	./chapters/SS_API_IMPERATIVE_INTRO.md
-[6]:	./chapters/PK_ANIMAL_RESOURCE.md
-[7]:	./chapters/PK_CREATE_ANIMAL.md
+[5]:	./chapters/SS_API_IMPERATIVE_DATABASE.md
+[6]:	./chapters/SS_API_IMPERATIVE_INTRO.md
+[7]:	./chapters/SS_API_IMPERATIVE_SEQUENCE.md
 [8]:	./chapters/PK_DELETE_ANIMAL.md
 [9]:	./chapters/PK_UPDATE_ANIMAL.md
 [10]:	./chapters/PK_CLASSES.md

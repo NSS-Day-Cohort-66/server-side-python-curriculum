@@ -82,6 +82,7 @@ code --install-extension alexcvzz.vscode-sqlite --force
 code --install-extension streetsidesoftware.code-spell-checker --force
 code --install-extension qwtel.sqlite-viewer --force
 code --install-extension ms-python.pylint --force
+code --install-extension padjon.save-and-run-ext --force
 
 
 echo "\n\n"

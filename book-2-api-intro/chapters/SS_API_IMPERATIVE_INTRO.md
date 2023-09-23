@@ -8,7 +8,7 @@ When you learned React, you had your first introduction to more declarative code
 
 Take a few minutes to read the [Imperative vs Declarative Programming – the Difference Explained in Plain English](https://www.freecodecamp.org/news/imperative-vs-declarative-programming-difference/) article to learn the basics of the different between the two types of coding.
 
-## Project Goals
+## Initial Project Goals
 
 You have several goals during this project, and most of them require thought, discussion, and documentation. It is time to start preparing you for being a professional junior developer who will need to learn an existing codebase.
 
@@ -16,6 +16,13 @@ You have several goals during this project, and most of them require thought, di
 2. Discuss and document why this code is written in imperative style.
 3. Discuss and document the pros and cons of imperative code.
 4. Implement the ability to allow clients to POST data to the API.
-5.
+5. Discuss and document how either composition or inheritance is used in this project.
 
-[Go to next step >](./SS_API_IMPERATIVE_INTRO.md)
+
+## Running the API
+
+1. Start the API in debug mode with **Shift+Alt+D**. The process will start and will be listening for HTTP requests on port 8000.
+2. Open Postman and make a GET request to `http://localhost:8000/ships`.
+3. Verify that you receive the JSON representation of 12 ships in the response body and that the status code on the response is 200.
+
+[Go to next step >](./SS_API_IMPERATIVE_SEQUENCE.md)

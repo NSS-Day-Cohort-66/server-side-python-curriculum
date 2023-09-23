@@ -22,4 +22,12 @@ Once the repository is created, you need to add your teammates as collaborators.
 6. Click the **Add person to this repository** button.
 7. Repeat steps 3-6 for each teammate.
 
-[Go to next step >](./SS_API_IMPERATIVE_INTRO.md)
+## Cloning the repository
+
+1. Everyone on the team can now clone the repository to their `workspace` directory.
+2. Once cloned, `cd` to the project directory.
+3. Run `pipenv shell` to activate the virtual environment.
+4. Run `pipenv install` to install some needed packages.
+5. Open the API project with `code .`
+
+[Go to next step >](./SS_API_IMPERATIVE_DATABASE.md)

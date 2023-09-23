@@ -64,5 +64,8 @@ code --install-extension njpwerner.autodocstring --force
 code --install-extension alexcvzz.vscode-sqlite --force
 code --install-extension streetsidesoftware.code-spell-checker --force
 code --install-extension ms-vscode-remote.remote-wsl --force
+code --install-extension padjon.save-and-run-ext --force
+code --install-extension qwtel.sqlite-viewer --force
+code --install-extension ms-python.pylint --force
 
 echo Success! You are ready to start coding with Python
