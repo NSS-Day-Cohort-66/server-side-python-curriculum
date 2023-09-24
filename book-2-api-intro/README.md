@@ -7,28 +7,27 @@ Before you start building projects that serve as APIs for your client code to in
 | # | 🎥 SQL |
 |--|--|
 | 1 | [Khan Academy: Intro to SQL][1] |
-| 2 | [SQL Bolt: Beginner SQL Tutorial][11] |
+| 2 | [SQL Bolt: Beginner SQL Tutorial][2] |
 
 ## Introduction to APIs
 
 Now that you have had an introduction to SQL, it's time to combine your nascent understanding of Python and SQL and start building your first APIs.
 
-| # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API<br/><sub>(_Declarative Code_)</sub> |
-|--|--|---|
-| 🐞 | [Debugging Python in Visual Studio Code][3] | |
-| 1 | [Get the Code][4]| [Review ERD][12] |
-| 2 | [Create the Database][5] | [Kneel Diamonds Data ][13] |
-| 3 |  [Exploring the API][6] | [Single Resources][14] |
-| 4 | [API Sequence Diagram][7] | [Place New Order][15] |
-| 5 | [Discharging Animals][8] |  [Cancel an Order][16] |
-| 6 | [Animal Status][9] | [Change an Order][17] |
-| 7 | [Animal Class][10] | [Defining Jewelry Classes][18] |
+| # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Declarative Code_)</sub> | 💎 💍 <br/> Kneel Diamonds <br/><sub>(_Your Code Style_)</sub> |
+|--|--|--|--|
+| 1 | [Debugging Python in Visual Studio Code][3] | [Digging Deeper on Declarative][9] | [Review ERD][15] |
+| 2 | [Get the Code][4]| [Get the Code][10] | [Kneel Diamonds Data][16] |
+| 3 | [Create the Database][5] | [Create the Database][11] | [Single Resources][17] |
+| 4 |  [Exploring the API][6] | [Exploring the API][12] | [Place New Order][18] |
+| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] | [Cancel an Order][19] |
+| 6 | [Creating Resources][8] | [Creating Resources][14] | [Change an Order][20] |
+| 7 | | | [Defining Jewelry Classes][21] |
 
 ## 🧭 Explorer Chapters
 
 Explorer chapters are optional and give you the opportunity to expand on the Core chapters and the concepts in the book.
 
-| # | 🐕 🐩 <br/> Python Kennels | 💎 💍 <br/> Kneel Diamonds |
+| # | 🛳️ ⛴️ <br/> Shipping Ships API | 💎 💍 <br/> Kneel Diamonds |
 |--|--|--|
 | 1 | [Expanding Animal Responses][19] | [Expanding Order Responses][20] |
 | 2 | [Animal Not Found][21] | [Order Does Not Exist][22] |
@@ -46,18 +45,19 @@ Pioneer chapters are optional let you develop Deep Learning on the concepts that
 | 2 | 👁 [One Module to Rule Them All][24] | 👑 [Sovereign of Modules and Logic][29] |
 
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
+[2]:	https://sqlbolt.com/
 [3]:	./chapters/DEBUGGING_PYTHON.md
 [4]:	./chapters/SS_API_IMPERATIVE_CLONE.md
 [5]:	./chapters/SS_API_IMPERATIVE_DATABASE.md
 [6]:	./chapters/SS_API_IMPERATIVE_INTRO.md
 [7]:	./chapters/SS_API_IMPERATIVE_SEQUENCE.md
-[8]:	./chapters/PK_DELETE_ANIMAL.md
-[9]:	./chapters/PK_UPDATE_ANIMAL.md
-[10]:	./chapters/PK_CLASSES.md
-[11]:	https://sqlbolt.com/
-[12]:	./chapters/KD_REVIEW.md
-[13]:	./chapters/KD_PACKAGES.md
-[14]:	./chapters/KD_SINGLE_RESOURCES.md
+[8]:	./chapters/SS_API_IMPERATIVE_POST.md
+[9]:	./chapters/SS_API_DECLARATIVE_INTRO.md
+[10]:	./chapters/SS_API_DECLARATIVE_CLONE.md
+[11]:	./chapters/SS_API_DECLARATIVE_DATABASE.md
+[12]:	./chapters/SS_API_DECLARATIVE_EXPLORE.md
+[13]:	./chapters/SS_API_DECLARATIVE_SEQUENCE.md
+[14]:	./chapters/SS_API_DECLARATIVE_POST.md
 [15]:	./chapters/KD_CREATE_ORDER.md
 [16]:	./chapters/KD_CANCEL_ORDER.md
 [17]:	./chapters/KD_UPDATE_ORDER.md

@@ -61,11 +61,15 @@ sequenceDiagram
 ```
 ````
 
-## Option 3: Mermaid Preview Extension
+### Option 3: Mermaid Preview Extension
 
 1. Search for the **Mermaid Preview** extension by Vlad Stirbu and install it.
 2. Create a file in your project with a `.mmd` extension.
 3. Open the VS Code command palette and run the **_Preview Mermaid_** command.
 4. The diagram will be rendered in a new panel to the right.
 
-[Go to next step >](./SS_API_IMPERATIVE_INTRO.md)
+## Build your diagram
+
+Once your team has chosen which tools will be used, use your debugging skills to build a sequence diagram that correctly visualizes the process for a GET request from a client.
+
+[Go to POST implementation chapter >](./SS_API_IMPERATIVE_POST.md)
