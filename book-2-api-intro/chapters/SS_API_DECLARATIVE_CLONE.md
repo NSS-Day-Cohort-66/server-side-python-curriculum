@@ -1,12 +1,12 @@
-# Your First API
+# Your Second API
 
 ## Creating the repository
 
 1. Choose one member of your team to create your repository
 2. That person will [generate your team's repository](https://github.com/new?template_name=declarative-ships-api&template_owner=nashville-software-school).
 3. In the screen that appears, open the **Owner** select menu and choose your cohort's organization.
-4. Enter in a creative name for your repository. Make sure the word **imperative** is in the name.
-    > Perhaps come up with a fun team name like _Squid Nuggets_ and in the **Repository Name** field enter `squid-nuggets-api-imperative`.
+4. Enter in a creative name for your repository. Make sure the word **declarative** is in the name.
+    > Perhaps come up with a fun team name like _Squid Nuggets_ and in the **Repository Name** field enter `squid-nuggets-api-declarative`.
 5. Mark the repository as public.
 6. Click the **Create repository** button.
 
@@ -34,4 +34,4 @@ Once the repository is created, you need to add your teammates as collaborators.
 
 Once everyone has the project cloned, it is time to set up everyone's local database.
 
-[Go to database setup chapter >](./dec.md)
+[Go to database setup chapter >](./SS_API_DECLARATIVE_DATABASE.md)

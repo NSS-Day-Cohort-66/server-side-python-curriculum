@@ -26,4 +26,4 @@ The term _seed the database_ simply means to load your database with some initia
 
 Once your database is correctly set up, the next step is to understand the goals for the project and starting exploring the API.
 
-[Go to Running API chapter >](./SS_API_IMPERATIVE_INTRO.md)
+[Go to Running API chapter >](./SS_API_DECLARATIVE_EXPLORE.md)
