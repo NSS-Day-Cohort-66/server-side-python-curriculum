@@ -72,4 +72,8 @@ sequenceDiagram
 
 Once your team has chosen which tools will be used, use your debugging skills to build a sequence diagram that correctly visualizes the process for a GET request from a client.
 
-[Go to POST implementation chapter >](./SS_API_IMPERATIVE_POST.md)
+## Next Steps
+
+When your sequence diagram is complete, you will work a bit on your SQL skills to expand the dock information for a hauler.
+
+[Expand dock chapter >](./SS_API_IMPERATIVE_EXPAND_HAULER_DOCK.md)

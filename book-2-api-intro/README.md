@@ -11,38 +11,48 @@ Before you start building projects that serve as APIs for your client code to in
 
 ## Introduction to APIs
 
-Now that you have had an introduction to SQL, it's time to combine your nascent understanding of Python and SQL and start building your first APIs.
+Now that you have had an introduction to SQL, it's time to combine your nascent understanding of Python and SQL and start building your first APIs. You will explore the Shipping Ships API as a team first, and then break off on your won to build the Kneel Diamonds API.
 
 | # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Declarative Code_)</sub> | 💎 💍 <br/> Kneel Diamonds <br/><sub>(_Your Code Style_)</sub> |
 |--|--|--|--|
-| 1 | [Debugging Python in Visual Studio Code][3] | [Digging Deeper on Declarative][9] | [Review ERD][15] |
-| 2 | [Get the Code][4]| [Get the Code][10] | [Kneel Diamonds Data][16] |
-| 3 | [Create the Database][5] | [Create the Database][11] | [Single Resources][17] |
-| 4 |  [Exploring the API][6] | [Exploring the API][12] | [Place New Order][18] |
-| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] | [Cancel an Order][19] |
-| 6 | [Creating Resources][8] | [Creating Resources][14] | [Change an Order][20] |
-| 7 | | | [Defining Jewelry Classes][21] |
+| 1 | [Debugging Python in Visual Studio Code][3] | [Digging Deeper on Declarative][9] | [Review ERD][24] |
+| 2 | [Get the Code][4]| [Get the Code][10] | [Jewelry Database][19] |
+| 3 | [Create the Database][5] | [Create the Database][11] | [Get Orders][20] |
+| 4 |  [Exploring the API][6] | [Exploring the API][12] | [Create New Order][21] |
+| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] | [Cancel an Order][22] |
+| 6 | [Where is the Hauler?][15] | [Who's Hauling Who?][17] | [Updating Prices][23] |
+| 7 |[Ships on a Hauler][16] | [Haulers at a Dock][18] | [Embedding Metal, Style, and Size][25] |
+| 8 | [Creating Resources][8]| [Creating Resources][14] | [Order Does Not Exist][26] |
+| 9 | | [Shipping Ships Client][37] | [Incomplete Order][27] |
+| 10 | | | [Protect the Inventory][28] |
+
+Once you have completed all of the Core Projects, your job is to do a self-assessment. Click on the link below to see what this book's assessment instructions are. Once complete, reach out to an instructor to review your vocabulary.
+
+| #   | 🎓 Self-Assessment |
+| --- | --- |
+| 1   | [Assess Your Competencies in Python and SQL](./chapters/SNAKES_ON_A_BRAIN.md) |
+
+## SQL Refresher
+
+Before moving on to the next book, build up your SQL skills a bit more. SQL is a core skills that employers expect you to have.
+
+| # | 🎥 SQL |
+|--|--|
+| 1 | [SQL Murder Mystery][36] |
+
 
 ## 🧭 Explorer Chapters
 
 Explorer chapters are optional and give you the opportunity to expand on the Core chapters and the concepts in the book.
 
-| # | 🛳️ ⛴️ <br/> Shipping Ships API | 💎 💍 <br/> Kneel Diamonds |
+| # | 🛳️ ⛴️ <br/> Shipping Ships API | 💎 💍  <br/> Kneel Diamonds
 |--|--|--|
-| 1 | [Expanding Animal Responses][19] | [Expanding Order Responses][20] |
-| 2 | [Animal Not Found][21] | [Order Does Not Exist][22] |
-| 3 | [Invalid Animal][25] | [Incomplete Order][26] |
-| 4 | [You Are a Customer Forever][27] | [Protect the Inventory][28] |
+| 1 | [Sort Ships by Hauler][29] | [Sort Resources by Price][34] |
+| 2 | [Sort Haulers by Dock][30] | [Get Orders by Metal, Style, or Size][35] |
+| 3 | [Get Ships by Hauler][31] | |
+| 4 | [Get Animals by Status][32] | |
+| 5 | [Add Number of Ships for Hauler][33] | |
 
-
-## 🏕 Pioneer Chapters
-
-Pioneer chapters are optional let you develop Deep Learning on the concepts that you practiced in this book. Be prepared to quickly reach the limit of your capabilities, and stretch your Web researching skills, and asking good questions.
-
-| # | 🐕 🐩 <br/> Python Kennels | 💎 💍  <br/> Kneel Diamonds |
-|--|--|--|
-| 1 | 🌵 [Keep the Kennels Dry][23] |  |
-| 2 | 👁 [One Module to Rule Them All][24] | 👑 [Sovereign of Modules and Logic][29] |
 
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
 [2]:	https://sqlbolt.com/
@@ -58,18 +68,27 @@ Pioneer chapters are optional let you develop Deep Learning on the concepts that
 [12]:	./chapters/SS_API_DECLARATIVE_EXPLORE.md
 [13]:	./chapters/SS_API_DECLARATIVE_SEQUENCE.md
 [14]:	./chapters/SS_API_DECLARATIVE_POST.md
-[15]:	./chapters/KD_CREATE_ORDER.md
-[16]:	./chapters/KD_CANCEL_ORDER.md
-[17]:	./chapters/KD_UPDATE_ORDER.md
-[18]:	./chapters/KD_CLASSES.md
-[19]:	./chapters/PK_EC_EXPAND_ANIMAL.md
-[20]:	./chapters/KD_EC_EXPAND_ORDER.md
-[21]:	./chapters/PK_EC_404.md
-[22]:	./chapters/KD_EC_404.md
-[23]:	./chapters/PK_PC_DRY.md
-[24]:	./chapters/PK_PC_SAURON.md
-[25]:	./chapters/PK_EC_400.md
-[26]:	./chapters/KD_EC_400.md
-[27]:	./chapters/PK_EC_405.md
+[15]:	./chapters/SS_API_IMPERATIVE_EXPAND_HAULER_DOCK.md
+[16]:	./chapters/SS_API_IMPERATIVE_EMBED_HAULER_SHIPS.md
+[17]:	./chapters/SS_API_DECLARATIVE_EXPAND_SHIP_HAULER.md
+[18]:	./chapters/SS_API_DECLARATIVE_EMBED_DOCK_HAULERS.md
+[19]:	./chapters/KD_DATABASE_CREATION.md
+[20]:	./chapters/KD_QUERY_ALL.md
+[21]:	./chapters/KD_INSERT.md
+[22]:	./chapters/KD_DELETE.md
+[23]:	./chapters/KD_UPDATE.md
+[24]:	./chapters/KD_REVIEW.md
+[25]:	./chapters/KD_JOIN.md
+[26]:	./chapters/KD_EC_404.md
+[27]:	./chapters/KD_EC_400.md
 [28]:	./chapters/KD_EC_405.md
-[29]:	./chapters/KD_PC_KING_OF_MODULES.md
+[29]:	./chapters/KD_EC_405.md
+[30]:	./chapters/KD_EC_405.md
+[31]:	./chapters/KD_EC_405.md
+[32]:	./chapters/KD_EC_405.md
+[33]:	./chapters/KD_EC_405.md
+[34]:	./chapters/KD_EC_405.md
+[35]:	./chapters/KD_EC_405.md
+[36]:	https://mystery.knightlab.com/
+[37]:	./chapters/SS_API_CLIENT.md
+
