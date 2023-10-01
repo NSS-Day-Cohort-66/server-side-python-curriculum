@@ -1,26 +1,12 @@
 # Installations and Configuration
 
-1. Clone the repo
-2. pipenv shell
-3. pipenv install
-4. Open in VS code and select interpreter
-5. python3 manage.py migrate
+## API Starter Code
 
-## Setup
+1. Use the [Rock of Ages API template](https://github.com/new?template_name=rock-of-ages-api&template_owner=nashville-software-school) to create a new repository in your Github account.
+2. Once the repository has been created, follow the instructions in the README.
 
-### Select Python Interpreter
+## Client Starter Code
 
-Open VS Code and press <kbd>⌘</kbd><kbd>SHIFT</kbd><kbd>P</kbd> (Mac), or <kbd>Ctrl</kbd><kbd>SHIFT</kbd><kbd>P</kbd> (Windows) to open the Command Palette, and select "Python: Select Interpreter".
-
-Find the option that has:
-
-`honeyrae-<random string>`
-
-## Create Base Django Tables
-
-Django gives user and role management tables for your application out of the box, and there is a built-in migration file that makes the tables in a SQLite database for you. Go ahead and run that migration to set up the initial tables.
-
-```sh
-python3 manage.py migrate
-```
+1. Use the [Rock of Ages Client template](https://github.com/new?template_name=rock-of-ages-client&template_owner=nashville-software-school) to create a new repository in your Github account.
+2. Once the repository has been created, follow the instructions in the README.
 

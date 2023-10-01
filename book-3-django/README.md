@@ -19,7 +19,7 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 | 2 | [Database Models][2] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Defining the Models][43]  <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Stylist Clients][57] | [Meeting Carrie][3] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |
 | 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Setup][44] <br/> <sub style="font-size:0.85rem;">\#authentication #tokens</sub> | [Equipment Inventory][58] |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
 | 4 | [Views][4] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Testing Authentication][45]  <br/> <sub style="font-size:0.85rem;">\#authentication #tokens</sub> | [Popular Hair Styles][59] |  [Carrie Cares][6] <br/> <sub style="font-size:0.85rem;">\#data \#fixtures</sub> |
-| 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Getting Some Starter Data][46] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> | [Stylist Equipment][60] |  [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
+| 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Types View][46] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> | [Stylist Equipment][60] |  [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
 | 6 | [URLs][12] <br/> <sub style="font-size:0.85rem;">\#routes</sub> | [Customer View][47] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [Exposing GET Requests][11] <br/> <sub style="font-size:0.85rem;">\#orm #viewset \#serializer \#router</sub> |
 | 7 | [Your First Migration][16] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Tickets and Employees][48] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [GameList and EventList Components][13] <br/> <sub style="font-size:0.85rem;">\#react \#map</sub> |
 | 8 | [Make an Appointment][40] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Honey Rae Client][49] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> |  |  [Exposing POST Requests][15] <br/> <sub style="font-size:0.85rem;">\#create \#post</sub> |
@@ -105,12 +105,12 @@ Pioneer chapters are optional and let you develop Deep Learning on the concepts 
 [39]: ./chapters/LU_SERIALIZER_DEPTH.md
 [40]: ./chapters/DD_MAKE_APPOINTMENT.md
 [41]: ./chapters/DDW_SETUP.md
-[42]: ./chapters/HR_INSTALLS.md
-[43]: ./chapters/HR_MODELS.md
-[44]: ./chapters/HR_AUTHENTICATION.md
+[42]: ./chapters/ROA_INSTALLS.md
+[43]: ./chapters/ROA_MODELS.md
+[44]: ./chapters/ROA_AUTHENTICATION.md
 [45]: ./chapters/HR_REGISTER.md
 [46]: ./chapters/HR_SEED_DB.md
-[47]: ./chapters/HR_CUSTOMER_VIEW.md
+[47]: ./chapters/ROA_TYPE_VIEW.md
 [48]: ./chapters/HR_EMPLOYEE_TICKET_VIEWS.md
 [49]: ./chapters/HR_CLIENT_INSTALL.md
 [50]: ./chapters/HR_USER_SERIALIZER.md
