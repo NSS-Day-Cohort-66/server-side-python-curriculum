@@ -99,8 +99,8 @@ from django.contrib.auth.models import User
 
 
 class Rock(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, , related_name='collection')
-    type = models.ForeignKey("Type", on_delete=models.CASCADE, , related_name='rocks')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='collection')
+    type = models.ForeignKey("Type", on_delete=models.CASCADE, related_name='rocks')
     name = models.CharField(max_length=155)
     weight = models.DecimalField(max_digits=5, decimal_places=2)
 ```
@@ -133,3 +133,9 @@ Once both of those steps are done, you can view your database file _(if you alre
 - `rockapi_type`
 
 The `auth_user` table was not created now. It was created with the initial migration you did in the last chapter.
+
+## Video Walkthrough
+
+Here is a 4:31 minute walkthrough of implementing the code with explanations.
+
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/vyrXoRQVjaoBycysiIal)

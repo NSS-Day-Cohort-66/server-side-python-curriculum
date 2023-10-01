@@ -38,8 +38,8 @@ class TypeView(ViewSet):
             Response -- JSON serialized type record
         """
 
-        type = Type.objects.get(pk=pk)
-        serialized = TypeSerializer(type, context={'request': request})
+        rock_type = Type.objects.get(pk=pk)
+        serialized = TypeSerializer(rock_type)
         return Response(serialized.data, status=status.HTTP_200_OK)
 
 
@@ -88,7 +88,13 @@ The next line is what sets up the `/rocks` resource. The first parameter, `r'roc
 
 The third, `rock`, is called the base name. You’ll only see the base name if you get an error in the server. It acts as a nickname for the resource and is usually the singular version of the URL.
 
-## Test it out
+## Video Walkthrough
+
+Here is a 5:55 minute walkthrough of implementing the code with explanations.
+
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/UkVfmoThqRW3tgxHpVqP)
+
+## Test Your View
 
 Try it out in your API client!
 
@@ -96,7 +102,8 @@ Try it out in your API client!
 2. Copy any one of them to use in your API client.
 3. Start a new GET request.
 4. Add a new header to the request named `Authorization`
-5. The value will be the word Token, followed by a space, and then the unique token you copied previously (e.g. `Token 0be249c88238743e5b4a7ac370b5145730c28e20`)
-6. Then grab one of the following two URLs and send a request.
+5. Grab a token from your `authtoken_tokens` table.
+6. The value will be the word Token, followed by a space, and then the unique token you copied
+7. Then grab one of the following two URLs and send a request.
    - `http://localhost:8000/types` should return a list of all the types.
    - `http://localhost:8000/types/1` should return the type with an id of 1.

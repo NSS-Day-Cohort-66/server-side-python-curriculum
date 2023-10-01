@@ -17,17 +17,17 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 |--|--|--|--| -- |
 | 1 | [Installations and Setup][41] | [Installations and Setup][42] | [Styling Appointments][56] | [Level Up API Setup][1] |
 | 2 | [Database Models][2] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Defining the Models][43]  <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Stylist Clients][57] | [Meeting Carrie][3] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |
-| 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Setup][44] <br/> <sub style="font-size:0.85rem;">\#authentication #tokens</sub> | [Equipment Inventory][58] |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
-| 4 | [Views][4] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Testing Authentication][45]  <br/> <sub style="font-size:0.85rem;">\#authentication #tokens</sub> | [Popular Hair Styles][59] |  [Carrie Cares][6] <br/> <sub style="font-size:0.85rem;">\#data \#fixtures</sub> |
-| 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Types View][46] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> | [Stylist Equipment][60] |  [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
-| 6 | [URLs][12] <br/> <sub style="font-size:0.85rem;">\#routes</sub> | [Customer View][47] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [Exposing GET Requests][11] <br/> <sub style="font-size:0.85rem;">\#orm #viewset \#serializer \#router</sub> |
-| 7 | [Your First Migration][16] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Tickets and Employees][48] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [GameList and EventList Components][13] <br/> <sub style="font-size:0.85rem;">\#react \#map</sub> |
-| 8 | [Make an Appointment][40] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Honey Rae Client][49] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> |  |  [Exposing POST Requests][15] <br/> <sub style="font-size:0.85rem;">\#create \#post</sub> |
-| 9 |  | [Expanding Customers and Employees][50] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> |  | [GameForm and EventForm Components][17] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
-| 10 |  | [Creating Tickets][51] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  | [Exposing PUT Requests][19] <br/> <sub style="font-size:0.85rem;">\#PUT \#update</sub> |
-| 11 |  | [Filtering Tickets][52] <br/> <sub style="font-size:0.85rem;">\#GET \#query-params</sub> |  |  [UpdateGame and UpdateEvent Components][20] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
-| 12 |  | [Assigning Tickets][53] <br/> <sub style="font-size:0.85rem;">\#PUT</sub> |  |  [Exposing DELETE Requests][23] <br/> <sub style="font-size:0.85rem;">\#DELETE \#destroy</sub> |
-| 13 |  | [Deleting Tickets][54] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  | [Leaving and Joining Events][35] |
+| 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Overview][44] <br/> <sub style="font-size:0.85rem;">\#authentication</sub> | [Equipment Inventory][58] |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
+| 4 | [Views][4] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Types View][47] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Popular Hair Styles][59] |  [Carrie Cares][6] <br/> <sub style="font-size:0.85rem;">\#data \#fixtures</sub> |
+| 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Database Fixtures][46] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> | [Stylist Equipment][60] | [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
+| 6 | [URLs][12] <br/> <sub style="font-size:0.85rem;">\#routes</sub> | [Rocks View][45] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [Exposing GET Requests][11] <br/> <sub style="font-size:0.85rem;">\#orm #viewset \#serializer \#router</sub> |
+| 7 | [Your First Migration][16] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Expand Rock Type and User][48] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [GameList and EventList Components][13] <br/> <sub style="font-size:0.85rem;">\#react \#map</sub> |
+| 8 | [Make an Appointment][40] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Creating Rocks][51] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  |  [Exposing POST Requests][15] <br/> <sub style="font-size:0.85rem;">\#create \#post</sub> |
+| 9 |  | [Deleting Rocks][54] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  | [GameForm and EventForm Components][17] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
+| 10 |  |  |  | [Exposing PUT Requests][19] <br/> <sub style="font-size:0.85rem;">\#PUT \#update</sub> |
+| 11 |  |  |  |  [UpdateGame and UpdateEvent Components][20] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
+| 12 |  |  |  |  [Exposing DELETE Requests][23] <br/> <sub style="font-size:0.85rem;">\#DELETE \#destroy</sub> |
+| 13 |  |  |  | [Leaving and Joining Events][35] |
 
 Once you have completed all of the Core Projects, your job is to do a self-assessment. Click on the link below to see what this book's assessment instructions are. Once complete, reach out to an instructor to review your vocabulary.
 
@@ -108,16 +108,13 @@ Pioneer chapters are optional and let you develop Deep Learning on the concepts 
 [42]: ./chapters/ROA_INSTALLS.md
 [43]: ./chapters/ROA_MODELS.md
 [44]: ./chapters/ROA_AUTHENTICATION.md
-[45]: ./chapters/HR_REGISTER.md
-[46]: ./chapters/HR_SEED_DB.md
+[45]: ./chapters/ROA_ROCK_VIEW.md
+[46]: ./chapters/ROA_FIXTURES.md
 [47]: ./chapters/ROA_TYPE_VIEW.md
-[48]: ./chapters/HR_EMPLOYEE_TICKET_VIEWS.md
-[49]: ./chapters/HR_CLIENT_INSTALL.md
+[48]: ./chapters/ROA_EXPAND_USER_TYPE.md
 [50]: ./chapters/HR_USER_SERIALIZER.md
-[51]: ./chapters/HR_TICKET_POST.md
-[52]: ./chapters/HR_TICKET_FILTER_FIND.md
-[53]: ./chapters/HR_TICKET_ASSIGN.md
-[54]: ./chapters/HR_TICKET_DELETE.md
+[51]: ./chapters/ROA_CREATE_ROCK.md
+[54]: ./chapters/ROA_DELETE.md
 [55]: ./chapters/DJANGO_ASSESSMENT.md
 [56]: ./chapters/ELATED_APPOINTMENTS.md
 [57]: ./chapters/ELATED_CLIENTS.md
