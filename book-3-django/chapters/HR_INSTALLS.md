@@ -179,10 +179,8 @@ Django gives user and role management tables for your application out of the box
 python3 manage.py migrate
 ```
 
----
 
-
-### Running the Django Server with VS Code Debugger
+## Running the Django Server with VS Code Debugger
 
 Inside the `.vscode` create a file called `launch.json`. Paste the following code in that file.
 
@@ -206,34 +204,3 @@ Inside the `.vscode` create a file called `launch.json`. Paste the following cod
     ]
 }
 ```
-
-## Optional - Hide Secret Key
-
-<details>
-    <summary>Do this only if you will be deploying this project to the public Cloud</summary>
-
-
-1. From your `honey-rae-server` directory, run the following command to create a `.env` file on the same level as your `manage.py` file.
-
-    ```zsh
-    touch .env
-    ```
-
-1. In the terminal run:
-
-    ```zsh
-    python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
-    ```
-
-1. Copy the output.
-
-1. Open the `.env` file in VS Code, and add `MY_SECRET_KEY=<paste output>` (without the angle brackets, and without any quotes)
-
-1. Open the `settings.py` file in your `levelup` directory.
-
-1. Locate the the `SECRET_KEY` variable (around line 23), and change it to be `SECRET_KEY = os.environ.get('MY_SECRET_KEY')`
-
-1. Import `os` at the top of your `settings.py` file.
-
-1. Stop your virtual environment <kbd>Ctrl</kbd><kbd>D</kbd>, and then restart it `pipenv shell`.
-</details>

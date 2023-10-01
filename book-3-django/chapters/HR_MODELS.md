@@ -154,13 +154,7 @@ python3 manage.py migrate
 
 <img src="./images/honey-rae-migrations.gif" alt="animation showing the migration for the new models" width="800px" />
 
-## Database Connection
-
-You should now have a `db.sqlite3` file in the project folder. Make a connection to the database with SQLite Explorer to see the tables in the database.
-
-<img src="./images/honey-rae-db-connection.gif" alt="animation showing the migration for the new models" width="800px" />
-
-
+You should now have a `db.sqlite3` file in the project folder.
 ## Resources
 
 * [Django Models](https://docs.djangoproject.com/en/3.2/topics/db/models/) - Overview of Django Models

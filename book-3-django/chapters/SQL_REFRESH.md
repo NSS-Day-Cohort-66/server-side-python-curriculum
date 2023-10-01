@@ -13,6 +13,3 @@ Visit the **learnsqlonline.org** site below, which is a free resource and work o
 
 [Learn SQL Online: Joining Tables](https://www.learnsqlonline.org/en/Joining_tables)
 
-## Next Up
-
-Once you are done with those refreshers, move on to [>> building LevelUp](./chapters/LU_DATA_DESIGN.md)

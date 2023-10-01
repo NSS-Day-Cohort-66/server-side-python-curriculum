@@ -1,12 +1,20 @@
-# Book 3 - Level Up With Django
+# Book 3 - Intro to Django
 
 This book introduces you to the Django application framework, and the Django REST API plugin for rapid API development.
 
-## 🍎 Required Core Chapters
+## SQL Refresher
 
-| # | 🐕‍🦺 DeShawn Dog Walking API | 🍯 Honey Rae's Repairs | 💇🏽‍♀️ <br/> Elated Mane | 🕹 Level Up |
+Before moving on to the next book, build up your SQL skills a bit more. SQL is a core skills that employers expect you to have.
+
+| # | 🎥 SQL |
+|--|--|
+| 1 | [SQL Murder Mystery][36] |
+| 2 | [SQL Refresh][61] |
+
+## Rapid API Development with Django
+
+| # | 🐕‍🦺 DeShawn Dog Walking API | 🪨 Rock of Ages | 💇🏽‍♀️ <br/> Elated Mane | 🕹 Level Up |
 |--|--|--|--| -- |
-| 0 |  |  |  | [SQL Refresh][61] |
 | 1 | [Installations and Setup][41] | [Installations and Setup][42] | [Styling Appointments][56] | [Level Up API Setup][1] |
 | 2 | [Database Models][2] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Defining the Models][43]  <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Stylist Clients][57] | [Meeting Carrie][3] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |
 | 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Setup][44] <br/> <sub style="font-size:0.85rem;">\#authentication #tokens</sub> | [Equipment Inventory][58] |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
@@ -19,15 +27,13 @@ This book introduces you to the Django application framework, and the Django RES
 | 10 |  | [Creating Tickets][51] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  | [Exposing PUT Requests][19] <br/> <sub style="font-size:0.85rem;">\#PUT \#update</sub> |
 | 11 |  | [Filtering Tickets][52] <br/> <sub style="font-size:0.85rem;">\#GET \#query-params</sub> |  |  [UpdateGame and UpdateEvent Components][20] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
 | 12 |  | [Assigning Tickets][53] <br/> <sub style="font-size:0.85rem;">\#PUT</sub> |  |  [Exposing DELETE Requests][23] <br/> <sub style="font-size:0.85rem;">\#DELETE \#destroy</sub> |
-| 13 |  | [Deleting Tickets][54] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  |   |
-| 🎓 | [Self-assessment][55] |  | |
+| 13 |  | [Deleting Tickets][54] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  | [Leaving and Joining Events][35] |
 
+Once you have completed all of the Core Projects, your job is to do a self-assessment. Click on the link below to see what this book's assessment instructions are. Once complete, reach out to an instructor to review your vocabulary.
 
-## 👩‍👩‍👧‍👦 Team Collaboration Projects
-
-| # | Project Name | Summary |
-|--|--|--|
-| 🎮 | [GamerRater](./GAMERRATER.md) | You have been presented with an unique business opportunity. A local startup has received a round of seed funding to build a platform that lets people talk about, provide information about, and rate the games that they play. |
+| #   | 🎓 Self-Assessment |
+| --- | --- |
+| 1   | [Assess Your Competencies with Django][55] |
 
 ## 🧭 Explorer Chapters
 
@@ -36,7 +42,7 @@ Explorer chapters give you the opportunity to expand on the Core chapters and th
 | # | 🍯 <br/> Honey Rae's Repairs | 🕹 🎲 <br/> Level Up |
 |--|--|--|
 | 1 | [Closing Tickets](./chapters/HR_TICKET_CLOSE.md) | [Filtering Games][37] | [View Custom Actions][25] |
-| 2 | [More Filtering of Tickets](./chapters/HR_EC_TICKET_FILTER.md) | [Leaving and Joining Events][35] |
+| 2 | [More Filtering of Tickets](./chapters/HR_EC_TICKET_FILTER.md) |  |
 | 3 | [Finding Tickets](./chapters/HR_TICKET_FIND.md) | [Shallow Serializers][39] |
 | 4 |  | [Catching Errors][38] |
 | 5 | | [Event Attendees][29] <br/> <sub style="font-size:0.85rem;">\#orm #annotation #count</sub> |
