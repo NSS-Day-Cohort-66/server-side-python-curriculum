@@ -98,3 +98,9 @@ Now it's time for you to do a bit of full-stack web development. Look at the ima
 Use your new knowledge of serializing foreign key fields on a model to return the first and last name of the user for each rock. Also make sure that the weight of the rock is serialized in the JSON string in the API, and then update the JSX of the client to display it.
 
 Take special care to note that the initial state for the `rocksState` variable will likely need to be augmented to prevent React from throwing angry errors at you.
+
+## Video Walkthrough
+
+Here is a 4:15 minute walkthrough of implementing the code with explanations.
+
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/gWiYg6hTGxgMorSvnU5D)
