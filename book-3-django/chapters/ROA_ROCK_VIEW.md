@@ -29,18 +29,9 @@ class RockView(ViewSet):
         Returns:
             Response -- JSON serialized instance
         """
-        rock = Rock()
-        rock.user = request.auth.user
-        rock.weight = request.data["weight"]
-        rock.name = request.data["name"]
-        rock.type = request.data["typeId"]
 
-        try:
-            rock.save()
-            serializer = RockSerializer(rock)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        except Exception as ex:
-            return Response({"reason": ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
+        # You will implement this feature in a future chapter
+        return Response("", status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
     def list(self, request):
         """Handle GET requests for all items
@@ -64,6 +55,24 @@ class RockSerializer(serializers.ModelSerializer):
         fields = ( 'id', 'name', 'weight', )
 
 ```
+
+## Register Your Route
+
+1. Import the rock view into the **views** package
+2. Import that view into `urls.py`
+3. Register that view to handle requests to http://localhost:8000/rocks
+    ```py
+    router.register(r'rocks', RockView, 'rock')
+    ```
+4. Perform a GET request and verify that you get an empty list back with a 200 status code.
+5. Perform a POST request with the following payload. Make sure you have the **Authorization** header set with a valid token from your database.
+    ```json
+    {
+        "name": "Cathy",
+        "weight": 1.3,
+        "typeId": 4
+    }
+    ```
 
 ## Client Keys and Server Keys
 

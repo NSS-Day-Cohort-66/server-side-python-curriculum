@@ -1,42 +1,100 @@
-# Override User Serialization
+# Expanding Foreign Keys
 
-The login form for the client you installed automatically enters in the credentials for Bryan Nilson, a customer who has submitted four service tickets to Honey Rae's Repairs. Go ahead and log in as him.
+Using Django REST Framework, expanding foreign keys involves utilizing serializers within serializers.
 
-You will immediately be taken to the list of Bryan's tickets. The last one has been completed already, but it doesn't list the name of the employee who fixed it.
+Currently, your **RockSerializer** only serializes the id, weight, and name fields. If you add user and type in the list of fields...
 
-<img src="./images/completed_ticket.png" width="400px" alt="Image of completed ticket, but undefined employee name" />
+```py
+class RockSerializer(serializers.ModelSerializer):
+    """JSON serializer"""
 
-This is because your API does not send back all of the information that the client needs to display that information. Watch the following video, and then implement the code yourself.
+    class Meta:
+        model = Rock
+        fields = ( 'id', 'name', 'weight', 'user', 'type', )
+```
 
-When you're done, you should see the name of the employee that is assigned to each of the three tickets.
+You only get the numeric foreign key value in the resulting JSON.
 
-[![Honey Rae API - Serializing Ticket Employee Video](images/ticket_with_employee_video.png)](https://watch.screencastify.com/v/CJPF5fiVlqsZH8nxo892)
-
-## Serializing Expanded Customer
-
-Next, authenticate with the following credentials.
-
-| Email | Password |
-|--|--|
-| meg@ducharme.com | ducharme |
-
-Meg is an employee, so her view shows **all** tickets. An employee gets to see the customer name on each ticket. If you look in the **`TicketBody`** component in the client, you will see the following condition.
-
-```js
+```json
 {
-    isStaff()
-        ? <p>Customer: {ticket?.customer?.full_name}</p>
-        : ""
+    "id": 1,
+    "name": "Angie",
+    "weight": 3.6,
+    "user": 1,
+    "type": 5
 }
 ```
 
-So the client is also expecting to see a `full_name` property on the customer assigned to the ticket. Your job is to make that happen. Follow the same process that was done for the employee.
+The problem with this is that the client also wants to display the label field of the rock type in the browser. Note that the **displayRocks** function the the **RockList** component wants to access that value with `rock.type.label`.
 
-1. Modify the class to add the custom property.
-2. Add a new serializer for the customer property on a ticket.
-3. Override the default serialization for the customer property with your new serializer.
+```js
+const displayRocks = () => {
+    if (rocks && rocks.length) {
+        return rocks.map(rock => <div>
+            {rock.name} ({rock.type.label})
+        </div>)
+    }
 
-When done, Meg should see the customer name on each ticket.
+    return <h3>Loading Rocks...</h3>
+}
+```
 
-<img src="./images/ticket_with_customer_name.png" width="400px" alt="Image of ticket with customer full name displayed" />
+Therefore, the API sending back the integer of `5` in this case is not giving the client code what it needs.
 
+## Serializer for Foreign Keys
+
+To accomplish this for the client, you need to tell Django to not provide the integer value, but to read from the **Type** table and serialize the related data as a nested object.
+
+Make sure you import the **Type** model at the top of the view.
+
+```py
+class RockTypeSerializer(serializers.ModelSerializer):
+    """JSON serializer"""
+
+    class Meta:
+        model = Type
+        fields = ( 'label', )
+```
+
+And then explicitly tell the **RockSerializer** to use that new one.
+
+
+```py
+class RockSerializer(serializers.ModelSerializer):
+    """JSON serializer"""
+
+    type = RockTypeSerializer(many=False)
+
+    class Meta:
+        model = Rock
+        fields = ( 'id', 'name', 'weight', 'user', 'type', )
+```
+
+This will generate a JSON string representation for a rock that looks like this.
+
+```json
+{
+    "id": 1,
+    "name": "Angie",
+    "weight": 3.6,
+    "user": 1,
+    "type": {
+        "label": "Basalt"
+    }
+}
+```
+
+Now the client will get exactly the data that it needs.
+
+## Full Stack Work
+
+Now it's time for you to do a bit of full-stack web development. Look at the image below and you will notice that a few things have been added to both the API and the React client code. This is the **All Rocks** view being displayed.
+
+- The weight of the rock is now displayed
+- The first and last name of the rock owner is now displayed
+
+![rock list with weight and owner name displayed](./images/augmented-rock-list.png)
+
+Use your new knowledge of serializing foreign key fields on a model to return the first and last name of the user for each rock. Also make sure that the weight of the rock is serialized in the JSON string in the API, and then update the JSX of the client to display it.
+
+Take special care to note that the initial state for the `rocksState` variable will likely need to be augmented to prevent React from throwing angry errors at you.
