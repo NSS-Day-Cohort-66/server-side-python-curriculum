@@ -16,14 +16,14 @@ Now that you have had an introduction to SQL, it's time to combine your nascent 
 | # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Declarative Code_)</sub> | 💎 💍 <br/> Kneel Diamonds <br/><sub>(_Your Code Style_)</sub> |
 |--|--|--|--|
 | 1 | [Debugging Python in Visual Studio Code][3] | [Digging Deeper on Declarative][9] | [Review ERD][24] |
-| 2 | [Get the Code][4]| [Get the Code][10] | [Jewelry Database][19] |
-| 3 | [Create the Database][5] | [Create the Database][11] | [Get Orders][20] |
-| 4 |  [Exploring the API][6] | [Exploring the API][12] | [Create New Order][21] |
-| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] | [Cancel an Order][22] |
-| 6 | [Where is the Hauler?][15] | [Who's Hauling Who?][17] | [Updating Prices][23] |
-| 7 |[Ships on a Hauler][16] | [Haulers at a Dock][18] | [Embedding Metal, Style, and Size][25] |
-| 8 | [Creating Resources][8]| [Creating Resources][14] | [Order Does Not Exist][26] |
-| 9 | | [Shipping Ships Client][37] | [Incomplete Order][27] |
+| 2 | [Get the Code][4]| [Get the Code][10] | [Project Setup][19] |
+| 3 | [Create the Database][5] | [Create the Database][11] | [Database Setup][20] |
+| 4 |  [Exploring the API][6] | [Exploring the API][12] | [Project Requirements][21] |
+| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] |  |
+| 6 | [Who Carries the Ship?][15] | [Hauler and its Dock][18] |  |
+| 7 | [Creating Resources][8] | [Creating Resources][14] | |
+| 8 | | [Shipping Ships Client][37] | [Order Does Not Exist][26] |
+| 9 | |  | [Incomplete Order][27] |
 | 10 | | | [Protect the Inventory][28] |
 
 Once you have completed all of the Core Projects, your job is to do a self-assessment. Click on the link below to see what this book's assessment instructions are. Once complete, reach out to an instructor to review your vocabulary.
@@ -51,7 +51,7 @@ Explorer chapters are optional and give you the opportunity to expand on the Cor
 | 2 | [Sort Haulers by Dock][30] | [Get Orders by Metal, Style, or Size][35] |
 | 3 | [Get Ships by Hauler][31] | |
 | 4 | [Get Animals by Status][32] | |
-| 5 | [Add Number of Ships for Hauler][33] | |
+| 5 | [Ships on a Hauler][16] | |
 
 
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
@@ -70,13 +70,10 @@ Explorer chapters are optional and give you the opportunity to expand on the Cor
 [14]:	./chapters/SS_API_DECLARATIVE_POST.md
 [15]:	./chapters/SS_API_IMPERATIVE_EXPAND_HAULER_DOCK.md
 [16]:	./chapters/SS_API_IMPERATIVE_EMBED_HAULER_SHIPS.md
-[17]:	./chapters/SS_API_DECLARATIVE_EXPAND_SHIP_HAULER.md
 [18]:	./chapters/SS_API_DECLARATIVE_EMBED_DOCK_HAULERS.md
-[19]:	./chapters/KD_DATABASE_CREATION.md
-[20]:	./chapters/KD_QUERY_ALL.md
-[21]:	./chapters/KD_INSERT.md
-[22]:	./chapters/KD_DELETE.md
-[23]:	./chapters/KD_UPDATE.md
+[19]:	./chapters/KD_SETUP.md
+[20]:	./chapters/KD_DATABASE_CREATION.md
+[21]:	./chapters/KD_REQUIREMENTS.md
 [24]:	./chapters/KD_REVIEW.md
 [25]:	./chapters/KD_JOIN.md
 [26]:	./chapters/KD_EC_404.md
