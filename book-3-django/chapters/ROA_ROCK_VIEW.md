@@ -8,6 +8,8 @@ For the **Rock** view, you initially need to support the following request types
 | POST | http://localhost:8000/rocks | New rock object | 201 |
 
 
+In this chapter, we are only going to implement the code to support the GET operation. The POST operation is handled by the `create` method, but that will be implemented fully in a future chapter.
+
 Create a new view module for rocks and put the following code in it.
 
 
