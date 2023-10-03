@@ -19,12 +19,10 @@ Now that you have had an introduction to SQL, it's time to combine your nascent 
 | 2 | [Get the Code][4]| [Get the Code][10] | [Project Setup][19] |
 | 3 | [Create the Database][5] | [Create the Database][11] | [Database Setup][20] |
 | 4 |  [Exploring the API][6] | [Exploring the API][12] | [Project Requirements][21] |
-| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] |  |
-| 6 | [Who Carries the Ship?][15] | [Hauler and its Dock][18] |  |
-| 7 | [Creating Resources][8] | [Creating Resources][14] | |
-| 8 | | [Shipping Ships Client][37] | [Order Does Not Exist][26] |
-| 9 | |  | [Incomplete Order][27] |
-| 10 | | | [Protect the Inventory][28] |
+| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] | [Order Does Not Exist][26] |
+| 6 | [Who Carries the Ship?][15] | [Hauler and its Dock][18] | [Incomplete Order][27] |
+| 7 | [Creating Resources][8] | [Creating Resources][14] |  |
+| 8 | | [Shipping Ships Client][28] |  |
 
 Once you have completed all of the Core Projects, your job is to do a self-assessment. Click on the link below to see what this book's assessment instructions are. Once complete, reach out to an instructor to review your vocabulary.
 
@@ -45,13 +43,11 @@ Once people complete all of the core material above, groups of 3-4 will be forme
 
 Explorer chapters are optional and give you the opportunity to expand on the Core chapters and the concepts in the book.
 
-| # | 🛳️ ⛴️ <br/> Shipping Ships API | 💎 💍  <br/> Kneel Diamonds
-|--|--|--|
-| 1 | [Sort Ships by Hauler][29] | [Sort Resources by Price][34] |
-| 2 | [Sort Haulers by Dock][30] | [Get Orders by Metal, Style, or Size][35] |
-| 3 | [Get Ships by Hauler][31] | |
-| 4 | [Get Animals by Status][32] | |
-| 5 | [Ships on a Hauler][16] | |
+| #  | 💎 💍  <br/> Kneel Diamonds |
+|--|--|
+| 1 | [Sort Resources by Price][29] |
+| 2 | [Get Orders by Metal, Style, or Size][30] |
+| 3 | [Accept Headers][31] |
 
 
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
@@ -75,19 +71,12 @@ Explorer chapters are optional and give you the opportunity to expand on the Cor
 [20]:	./chapters/KD_DATABASE_CREATION.md
 [21]:	./chapters/KD_REQUIREMENTS.md
 [24]:	./chapters/KD_REVIEW.md
-[25]:	./chapters/KD_JOIN.md
 [26]:	./chapters/KD_EC_404.md
 [27]:	./chapters/KD_EC_400.md
-[28]:	./chapters/KD_EC_405.md
-[29]:	./chapters/KD_EC_405.md
-[30]:	./chapters/KD_EC_405.md
-[31]:	./chapters/KD_EC_405.md
-[32]:	./chapters/KD_EC_405.md
-[33]:	./chapters/KD_EC_405.md
-[34]:	./chapters/KD_EC_405.md
-[35]:	./chapters/KD_EC_405.md
-[36]:	https://mystery.knightlab.com/
-[37]:	./chapters/SS_API_CLIENT.md
+[28]:	./chapters/SS_API_CLIENT.md
+[29]:	./chapters/KD_EC_SORT_BY_PRICE.md
+[30]:	./chapters/KD_EC_FILTER_ORDER_BY_RESOURSE.md
+[31]:	./chapters/KD_EC_ACCEPT_HEADERS.md
 [38]:	./chapters/RARE.md
 [39]:	./chapters/ADVENTURE_GUIDELINES.md
 

@@ -1,4 +1,4 @@
-# Packages and Resources
+# Project Directories and Files
 
 Now it's time to build the directory and file structure for a Kneel Diamonds API.
 
@@ -30,6 +30,4 @@ pipenv install
 
 Once that it complete, open the project directory in Visual Studio Code.
 
-## Your Style
-
-Now you get to make the decision about how to you want build this project - imperatively, declaratively, or a mixture of the two. Bring over any code from either of the Shipping Ship API projects that you want.
+Next: [Database setup chapter >](./KD_DATABASE_CREATION.md)

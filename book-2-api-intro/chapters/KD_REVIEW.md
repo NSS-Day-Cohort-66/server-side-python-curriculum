@@ -8,4 +8,4 @@ Three of those tables have data that will never change _(i.e. no new data will b
 
 Keep the ERD open in a browser tab while you build this project so you can always look at it to remember table names and the fields on each one.
 
-Now move on to the [next chapter >](./KD_PACKAGES.md).
+Next: [Project setup chapter >](./KD_SETUP.md)
