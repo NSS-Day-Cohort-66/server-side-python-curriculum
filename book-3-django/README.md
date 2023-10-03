@@ -24,7 +24,7 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 | 7 | [Your First Migration][16] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Expand Rock Type and User][48] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [GameList and EventList Components][13] <br/> <sub style="font-size:0.85rem;">\#react \#map</sub> |
 | 8 | [Make an Appointment][40] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Creating Rocks][51] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  |  [Exposing POST Requests][15] <br/> <sub style="font-size:0.85rem;">\#create \#post</sub> |
 | 9 |  | [Deleting Rocks][54] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  | [GameForm and EventForm Components][17] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
-| 10 |  |  |  | [Exposing PUT Requests][19] <br/> <sub style="font-size:0.85rem;">\#PUT \#update</sub> |
+| 10 |  | [Only My Rocks][62] <br/> <sub style="font-size:0.85rem;">\#filter \#query-params</sub> |  | [Exposing PUT Requests][19] <br/> <sub style="font-size:0.85rem;">\#PUT \#update</sub> |
 | 11 |  |  |  |  [UpdateGame and UpdateEvent Components][20] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
 | 12 |  |  |  |  [Exposing DELETE Requests][23] <br/> <sub style="font-size:0.85rem;">\#DELETE \#destroy</sub> |
 | 13 |  |  |  | [Leaving and Joining Events][35] |
@@ -122,3 +122,4 @@ Pioneer chapters are optional and let you develop Deep Learning on the concepts 
 [59]: ./chapters/ELATED_STYLE_CUSTOMERS.md
 [60]: ./chapters/ELATED_EQUIPMENT_PER_STYLIST.md
 [61]: ./chapters/SQL_REFRESH.md
+[62]: ./chapters/ROA_FILTERING_BY_USER.md
