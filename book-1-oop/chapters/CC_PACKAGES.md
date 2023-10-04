@@ -14,5 +14,11 @@ For this next stage of the process, you are going to move all of the classes out
     # etc...
     ```
 4. Import each animal into the `index.py` module via packages.
+    ```py
+    # For example
+    from swimming import Shark
+    from slithering import Boa
+    # etc...
+    ```
 
 [Move to next chapter >](./CC_CLASS_PROPERTIES.md)
