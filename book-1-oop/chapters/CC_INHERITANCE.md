@@ -183,16 +183,26 @@ stinky = Llama("Stinky", "domestic llama", "afternoon", "barley hay")
 ```
 
 Some things to note about these changes:
-1. The `walking` atribute was not added to **`Animal`**, but instead stays on **`Llama`**. Why? It's not unique to Llama, right? True, but because it's not a property shared by all critters in our system, it doesn't belong on **`Animal`**
+
+1. The `walking` attribute was not added to **`Animal`**, but instead stays on **`Llama`**. Why? It's not unique to Llama, right? True, but because it's not a property shared by all critters in our system, it doesn't belong on **`Animal`**
 
 2. We can still pass the values for a llama object to **`Llama`**, even though those properties are now defined in **`Animal`**. How? Inside **`Llama`**'s `__init__` function we call **`Animal`**'s `__init__` function and pass those values "up" to it. `super()` is Python's way of designating the parent class. Here, `super` is used in the sense of meaning 'above' or 'of the highest power'.
 
 3. Notice that we did not directly use **`Animal`** to make our llama object. At no point will you ever directly instantiate a base class. Instances are always created from the child class.
 
 ### Practice: The Great Inheritance Overhaul
+
 You know the drill by now! It's time to refactor all of your classes. This time it's in the name of not having to spend so much time refactoring your classes in the future.
-1. Start by defining **`Animal`** at the top of `animals.py`.
-1. Work your way through your critters to evolve them into its children.
+
+1. Start by defining an **`Animal`** class in the same directory as `index.py`.
+1. Make every specific animal class you have defined so far inherit from **Animal**.
+    ```py
+    # For example...
+    from animal import Animal
+
+    class Snake(Animal):
+        # etc...
+    ```
 
 ## Overriding Parent Behavior
 
@@ -204,7 +214,7 @@ Let's use our **`Llama`** class again. Let's say that Bobby's llamas are a bit s
 
 So, if feeding a llama is an action unique to a llama, you might decide that the key is to define a method directly on **`Llama`** to describe the action of feeding a llama. And you'd be right!
 
-And that function's behavior could be
+And that function's behavior could be...
 ```py
 print(f'on {date.today()}, {self.name} had "Rockytop" sung to it so it would eat its {self.food}')
 ```
@@ -255,6 +265,7 @@ Now the Tesla will make a different noise.
 Also read [Method Overriding in Python](https://www.studytonight.com/python/method-overriding-in-python).
 
 ### Practice: Pacify Your Picky Eaters
+
 Customize the way some of your critters are fed. Use method overriding to define a more specific `feed` behavior on three of your child classes.
 
 If you're feeling experimental, see what happens when you don't name your method feed. Call it `feed_llama` for example. What happens when you call it? Can you still call `feed`, too? What happens? Can you think why that might be problematic? Discuss that with your classmates, or ping an instructor with your thoughts.
