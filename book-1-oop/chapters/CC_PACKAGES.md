@@ -16,8 +16,9 @@ For this next stage of the process, you are going to move all of the classes out
 4. Import each animal into the `index.py` module via packages.
     ```py
     # For example
-    from swimming import Shark
+    from swimming import Shark, BlueWhale
     from slithering import Boa
+    from walking import Tiger, Rhino
     # etc...
     ```
 
