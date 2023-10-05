@@ -103,3 +103,13 @@ With either strategy, you need to render a **Delete** button for each rock if th
 ![](./images/user-rock-list-with-delete.png)
 
 Then implement the delete button by performing a DELETE request that you supported in your API in the last chapter. Make sure you get the new state after the delete is successful.
+
+## Video Walkthrough
+
+Here is a 4:24 minute walkthrough of implementing the code in the client to render user rocks.
+
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/x5TTolsqLiK7oRepLqd1)
+
+Here is a 4:24 minute walkthrough of implementing the code in the client to delete user rocks.
+
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/x5TTolsqLiK7oRepLqd1)
