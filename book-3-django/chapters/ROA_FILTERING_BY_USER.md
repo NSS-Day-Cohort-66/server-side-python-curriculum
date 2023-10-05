@@ -110,6 +110,6 @@ Here is a 4:24 minute walkthrough of implementing the code in the client to rend
 
 [<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/x5TTolsqLiK7oRepLqd1)
 
-Here is a 4:24 minute walkthrough of implementing the code in the client to delete user rocks.
+Here is a 4:26 minute walkthrough of implementing the code in the client to delete user rocks.
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/x5TTolsqLiK7oRepLqd1)
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/7vMAJPKUM1tbgeO18vYt)
