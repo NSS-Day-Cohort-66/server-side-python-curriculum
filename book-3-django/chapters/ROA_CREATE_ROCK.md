@@ -45,8 +45,3 @@ If you've made it this far, you have noticed that there is something wrong with 
 - Watch the Components tab and inspect the state of the **RockForm** component as you fill out the form.
 - Preview the response from the API when you submit the form and see if there are additional clues.
 
-## Video Walkthrough
-
-Here is a 2:03 minute walkthrough of implementing the code with explanations.
-
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/H0elzOxahxsHsTk8lZjJ)
