@@ -30,13 +30,29 @@ That's why it's called multiple inheritance. You can define a derived type that 
 
 Before you get all the moving parts of your newly-flexible code working with multiple inheritance, it's time to do some house cleaning to organize and modularize. You should end up with the following file structure. Create the necessary new directories and files and move the appropriate code into those files where necessary.
 
+One thing that will have to change is the import at the top of each concrete animal class.
+
+```py
+from animal import Animal
+```
+
+Has to be subtly changed to
+
+```py
+from .animal import Animal
+```
+
 ```sh
 petting_zoo/
     |__ animals/
-          |__ __init__.py
-          |__ animal.py # put Animal class in here
-          |__ llama.py # one critter class
-          |__ goose.py # another critter class. you get the point
+          |__ __init__.py # Import ALL animals (but not Animal base class)
+          |__ animal.py
+          |__ boa.py
+          |__ elephant.py
+          |__ llama.py
+          |__ puffin.py
+          |__ whale.py
+          |__ zebra.py
     |__ attractions/
           |__ __init__.py
           |__ attraction.py
