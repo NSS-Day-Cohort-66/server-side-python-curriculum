@@ -13,13 +13,13 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 
 ## Rapid API Development with Django
 
-| # | 🐕‍🦺 DeShawn Dog Walking API | 🪨 Rock of Ages | 💇🏽‍♀️ <br/> Elated Mane | 🕹 Level Up |
+| # | 🐕‍🦺 DeShawn Dog Walking API <br/> <sub>_(Guided Tour)_</sub> | 🪨 Rock of Ages <br/> <sub>_(Using Authentication)_</sub> | 📚 Reader's Digest <br/> <sub>_(Many to Many)_</sub> | 🕹 Level Up <br/> <sub>_(Advanced Practice)_</sub> |
 |--|--|--|--| -- |
-| 1 | [Installations and Setup][41] | [Installations and Setup][42] | [Styling Appointments][56] | [Level Up API Setup][1] |
-| 2 | [Database Models][2] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Defining the Models][43]  <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Stylist Clients][57] | [Meeting Carrie][3] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |
-| 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Overview][44] <br/> <sub style="font-size:0.85rem;">\#authentication</sub> | [Equipment Inventory][58] |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
-| 4 | [Views][4] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Types View][47] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Popular Hair Styles][59] |  [Carrie Cares][6] <br/> <sub style="font-size:0.85rem;">\#data \#fixtures</sub> |
-| 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Rocks View][45] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Stylist Equipment][60] | [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
+| 1 | [Installations and Setup][41] | [Installations and Setup][42] |  | [Level Up API Setup][1] |
+| 2 | [Database Models][2] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Defining the Models][43]  <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |  | [Karen's Requirements][3] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |
+| 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Overview][44] <br/> <sub style="font-size:0.85rem;">\#authentication</sub> |  |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
+| 4 | [Views][4] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Types View][47] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [Carrie Cares][6] <br/> <sub style="font-size:0.85rem;">\#data \#fixtures</sub> |
+| 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Rocks View][45] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  | [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
 | 6 | [URLs][12] <br/> <sub style="font-size:0.85rem;">\#routes</sub> | [Database Fixtures][46] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> |  |  [Exposing GET Requests][11] <br/> <sub style="font-size:0.85rem;">\#orm #viewset \#serializer \#router</sub> |
 | 7 | [Your First Migration][16] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Expand Rock Type and User][48] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [GameList and EventList Components][13] <br/> <sub style="font-size:0.85rem;">\#react \#map</sub> |
 | 8 | [Make an Appointment][40] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Creating Rocks][51] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  |  [Exposing POST Requests][15] <br/> <sub style="font-size:0.85rem;">\#create \#post</sub> |
@@ -39,26 +39,15 @@ Once you have completed all of the Core Projects, your job is to do a self-asses
 
 Explorer chapters give you the opportunity to expand on the Core chapters and the concepts in the book without any guidance or boilerplate code.
 
-| # | 🍯 <br/> Honey Rae's Repairs | 🕹 🎲 <br/> Level Up |
+| # | 💇🏽‍♀️  Elated Mane <br/> <sub>_(Related Name Practice)_</sub> | 🕹  Level Up |
 |--|--|--|
-| 1 | [Closing Tickets](./chapters/HR_TICKET_CLOSE.md) | [Filtering Games][37] | [View Custom Actions][25] |
-| 2 | [More Filtering of Tickets](./chapters/HR_EC_TICKET_FILTER.md) |  |
-| 3 | [Finding Tickets](./chapters/HR_TICKET_FIND.md) | [Shallow Serializers][39] |
-| 4 |  | [Catching Errors][38] |
-| 5 | | [Event Attendees][29] <br/> <sub style="font-size:0.85rem;">\#orm #annotation #count</sub> |
-| 6 | | [Event Attendees][31] <br/> <sub style="font-size:0.85rem;">\#orm #annotation #count</sub> |
-| 7 | | [Joined Events][33] <br/> <sub style="font-size:0.85rem;">\#orm #Q</sub> |
-| 8 | | [POST Validation][36] |
-
-## 🏕 Pioneer Chapters
-
-Pioneer chapters are optional and let you develop Deep Learning on the concepts that you practiced in this book.
-
-| # | 🍔 FavaMeal <br/> <sub>_(Custom actions &amp; properties )_</sub> |
-|--|--|
-| 1 | [Favorite Restaurants][22] <br/> <sub style="font-size:0.85rem;">\#custom-action<br/>\#custom-property</sub> |
-| 2 | [Favorite Meals][24] <br/> <sub style="font-size:0.85rem;">\#custom-action<br/>\#custom-property</sub> |
-| 3 | [Meal Ratings][27] <br/> <sub style="font-size:0.85rem;">\#custom-action<br/>\#custom-property</sub> |
+| 1 | [Styling Appointments][56] | [Filtering Games][37] | [View Custom Actions][25] |
+| 2 | [Stylist Clients][57] | [Shallow Serializers][39] |
+| 3 | [Equipment Inventory][58] | [Catching Errors][38] |
+| 4 | [Popular Hair Styles][59] | [Event Attendees][29] <br/> <sub style="font-size:0.85rem;">\#orm #annotation #count</sub> |
+| 5 | [Stylist Equipment][60] | [Event Attendees][31] <br/> <sub style="font-size:0.85rem;">\#orm #annotation #count</sub> |
+| 6 | | [Joined Events][33] <br/> <sub style="font-size:0.85rem;">\#orm #Q</sub> |
+| 7 | | [POST Validation][36] |
 
 ## 🔐 Deep Learning Group Project Unlocked
 
@@ -84,16 +73,10 @@ Pioneer chapters are optional and let you develop Deep Learning on the concepts 
 [15]: ./chapters/LU_CREATE.md
 [16]: ./chapters/DD_MIGRATION.md
 [17]: ./chapters/LU_CREATE_GAME.md
-[18]: ./chapters/GR_REVIEWS.md
 [19]: ./chapters/LU_UPDATE.md
 [20]: ./chapters/LU_EDIT_FORMS.md
-[21]: ./chapters/GR_GAME_RATINGS.md
-[22]: ./chapters/FV_REST_FAVE.md
 [23]: ./chapters/LU_DESTROY.md
-[24]: ./chapters/FV_MEAL_FAVE.md
 [25]: ./chapters/LU_CUSTOM_ACTION.md
-[26]: ./chapters/GR_EDIT_GAME.md
-[27]: ./chapters/FV_MEAL_RATINGS.md
 [28]: ./chapters/RARE_REST.md
 [29]: ./chapters/EVENTS_PER_GAME.md
 [31]: ./chapters/LU_EVENT_ATTENDEES.md

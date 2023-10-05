@@ -1,10 +1,20 @@
 # Level Up React Client
 
-You are going to start this project with a basic React client for gamers to use to create accounts, register games, schedule events, and join/leave events created by other gamers.
+You will be building a React client for this project as well since you are a full-stack development student. Go back and look at the README for the **Rock Of Ages** client project, and follow the instructions in the **How This Was Generated** section; make sure you create a directory named `levelup` instead of `rock-client`.
 
-Visit the [Level Up React Template](https://github.com/nashville-software-school/level-up-react-18-template) Github repository and click on the "Use this template" button to generate a repository in your own Github account.
+You can copy the following files from **Rock Of Ages** to **Level Up**.
 
-Once the generation process is complete, clone the repository down to a directory of your choosing inside your `~/workspace` directory. Once cloned, start the application and in your browser, you should be able to toggle back and forth between the login and register views, as shown below.
+- `pages/Login.css`
+- `pages/Login.jsx`
+- `pages/Register.jsx`
+- `components/Navbar.css`
+- `components/Navbar.jsx`
 
-![](./images/client-initial-views.gif)
-
+1. Open the **Login** and **Register** components and change the local storage key being used and header above the forms to **Level Up** instead of **Rock of Ages**.
+2. Open the **Navbar** component and change the name of the local storage key.
+3. In the **Navbar** component, create links for the following actions.
+    - Games
+    - Events
+    - Profile
+    - Logout
+4. Create your Github repository and make your first commit and push.
