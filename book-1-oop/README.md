@@ -18,6 +18,12 @@ After reading the above article, you can practice your Python in the context of 
 | 10 | [Complex, Clean Critter Classes][10] <br/> <sub style="font-size:0.85rem;">\#inheritance #multiple</sub> |
 | 11 | [If it Honks Like a Goose][11] <br/> <sub style="font-size:0.85rem;">\#typing</sub> |
 
+Once you have completed the project, your job is to do a self-assessment. This is truly a self-assessment, as you will need to reflect on what you learned in this project.
+
+| #   | 🎓 Self-Assessment |
+| --- | ------------------ |
+| 1   | [Reflect on what you just learned](./chapters/SELF_ASSESSMENT.md) |
+
 [1]:	./chapters/CC_PROJECT_SETUP.md
 [2]:	./chapters/CC_CLASSES.md
 [3]:	./chapters/CC_CONSTRUCTORS.md

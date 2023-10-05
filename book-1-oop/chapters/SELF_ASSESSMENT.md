@@ -7,6 +7,7 @@ This is truly a self-assessment, as you will need to reflect on what you learned
 ## Object-Oriented Programming Reflection Questions
 
 ### 1. **Classes**
+
 - What is the purpose of a class in object-oriented programming (OOP)?
 - How does defining a class differ from instantiating an object of that class?
 - Can you describe a real-world analogy for classes and objects?
