@@ -74,6 +74,6 @@ Once your team has chosen which tools will be used, use your debugging skills to
 
 ## Next Steps
 
-When your sequence diagram is complete, you will work a bit on your SQL skills to expand the dock information for a hauler.
+When your sequence diagram is complete, your team must contact one of your coaches for a review. Once that review is done, and any corrections are made, you can move on to the next chapter.
 
 [Expand dock chapter >](./SS_API_IMPERATIVE_EXPAND_HAULER_DOCK.md)
