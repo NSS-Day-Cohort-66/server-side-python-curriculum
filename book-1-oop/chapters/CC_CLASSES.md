@@ -4,6 +4,7 @@
 
 ```sh
 mkdir -p ~/workspace/python/exercises/petting_zoo && cd $_
+curl -L -s 'https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore' > .gitignore
 touch animals.py
 ```
 

@@ -67,5 +67,6 @@ code --install-extension ms-vscode-remote.remote-wsl --force
 code --install-extension padjon.save-and-run-ext --force
 code --install-extension qwtel.sqlite-viewer --force
 code --install-extension ms-python.pylint --force
+code --install-extension ms-python.black-formatter --force
 
 echo Success! You are ready to start coding with Python
