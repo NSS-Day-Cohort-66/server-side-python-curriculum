@@ -1,5 +1,18 @@
 PYTHON_VERSION=3.9
 
+echo "Installing VS Code Extensions"
+code --install-extension ms-python.python --force
+code --install-extension ms-python.vscode-pylance --force
+code --install-extension njpwerner.autodocstring --force
+code --install-extension alexcvzz.vscode-sqlite --force
+code --install-extension streetsidesoftware.code-spell-checker --force
+code --install-extension ms-vscode-remote.remote-wsl --force
+code --install-extension padjon.save-and-run-ext --force
+code --install-extension qwtel.sqlite-viewer --force
+code --install-extension ms-python.pylint --force
+code --install-extension ms-python.black-formatter --force
+
+
 echo "Update Ubuntu and install required packages"
 sudo apt update
 sudo apt install -y gcc make build-essential openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev zlib1g-dev libncursesw5-dev libgdbm-dev libc6-dev zlib1g-dev libsqlite3-dev tk-dev libssl-dev openssl libffi-dev wget liblzma-dev curl xz-utils libncurses5-dev python3-openssl llvm sqlite
@@ -55,18 +68,5 @@ then
     echo "Could not find pipenv, let an instructor know"
     return 0
 fi
-
-
-echo "Installing VS Code Extensions"
-code --install-extension ms-python.python --force
-code --install-extension ms-python.vscode-pylance --force
-code --install-extension njpwerner.autodocstring --force
-code --install-extension alexcvzz.vscode-sqlite --force
-code --install-extension streetsidesoftware.code-spell-checker --force
-code --install-extension ms-vscode-remote.remote-wsl --force
-code --install-extension padjon.save-and-run-ext --force
-code --install-extension qwtel.sqlite-viewer --force
-code --install-extension ms-python.pylint --force
-code --install-extension ms-python.black-formatter --force
 
 echo Success! You are ready to start coding with Python

@@ -1,5 +1,18 @@
 PYTHON_VERSION=3.10
 
+
+echo "Installing VS Code Extensions"
+code --install-extension ms-python.python --force
+code --install-extension ms-python.vscode-pylance --force
+code --install-extension njpwerner.autodocstring --force
+code --install-extension alexcvzz.vscode-sqlite --force
+code --install-extension streetsidesoftware.code-spell-checker --force
+code --install-extension qwtel.sqlite-viewer --force
+code --install-extension ms-python.pylint --force
+code --install-extension padjon.save-and-run-ext --force
+code --install-extension ms-python.black-formatter --force
+
+
 if command -v pyenv >/dev/null 2>&1; then
   echo "Pyenv already installed"
 else
@@ -69,22 +82,15 @@ else
 
   # Verify installation
   if ! which pipenv >/dev/null 2>&1; then
-      echo "\033[31m🧨 Error: Installation of pipenv failed. Contact an instructor.\033[0m"
-      exit 1
+
+      brew install pipenv
+
+      if ! which pipenv >/dev/null 2>&1; then
+          echo "\033[31m🧨 Error: Installation of pipenv failed. Contact an instructor.\033[0m"
+          exit 1
+      fi
   fi
 fi
-
-echo "Installing VS Code Extensions"
-code --install-extension ms-python.python --force
-code --install-extension ms-python.vscode-pylance --force
-code --install-extension njpwerner.autodocstring --force
-code --install-extension alexcvzz.vscode-sqlite --force
-code --install-extension streetsidesoftware.code-spell-checker --force
-code --install-extension qwtel.sqlite-viewer --force
-code --install-extension ms-python.pylint --force
-code --install-extension padjon.save-and-run-ext --force
-code --install-extension ms-python.black-formatter --force
-
 
 echo "\n\n"
 echo "\033[31m[\033[36mnotice\033[31m]\033[0m Run the following command to complete installations"
