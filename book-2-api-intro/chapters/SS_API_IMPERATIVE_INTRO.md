@@ -24,7 +24,7 @@ You have several goals during this project, and most of them require thought, di
 1. Start the API in debug mode with **Shift+Alt+D**. The process will start and will be listening for HTTP requests on port 8000.
 2. Open Postman and make a GET request to `http://localhost:8000/ships`.
 3. Verify that you receive the JSON representation of 12 ships in the response body and that the status code on the response is 200.
-4. Explore the code for the API, determine which types of requests that it appears to support and test each one to verify that they work.
+4. Open up the `json-server.py` module and explore the code for the API, determine which types of requests that it appears to support and test each one to verify that they work.
 
 ## Next Step
 
