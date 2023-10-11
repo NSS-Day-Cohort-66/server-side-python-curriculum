@@ -32,9 +32,10 @@ This is truly a self-assessment, as you will need to reflect on what you learned
 - Can you provide an example from the project where composition was particularly useful?
 
 ### 6. **Multiple Inheritance**
+
 - What challenges might arise from using multiple inheritance?
-- How does Python's method resolution order (MRO) help in resolving ambiguities in multiple inheritance?
 - Can you think of an alternative to multiple inheritance to achieve similar functionality?
+- Explore the Web to find out what the "Mixin" strategy is in Python.
 
 ### 7. **Duck Typing**
 - How would you explain the phrase "If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck" in the context of programming?
