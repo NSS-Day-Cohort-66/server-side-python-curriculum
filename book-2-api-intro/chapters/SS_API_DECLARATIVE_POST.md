@@ -21,4 +21,6 @@ Once you have implemented support for POST operations, your team is encouraged t
 
 Once your team has achieved all goals for this project and documented your observations and conclusions, reach out to an instructor for a comprehensive retrospective and code review. In this retrospective, you will not be focusing specifically on code, but more on higher-order concepts and how you arrived at your decisions.
 
-Once that retrospective is done, each teammate will be building their own project using their own style of code that is either imperative, declarative, or a mixture of the two.
+Once that retrospective is done, each teammate will be building their own React client for this API.
+
+[Build your Shipping Ships Client >](./SS_API_CLIENT.md)
