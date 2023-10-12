@@ -19,8 +19,8 @@ Now that you have had an introduction to SQL, it's time to combine your nascent 
 | 2 | [Get the Code][4]| [Get the Code][10] | [Project Setup][19] |
 | 3 | [Create the Database][5] | [Create the Database][11] | [Database Setup][20] |
 | 4 |  [Exploring the API][6] | [Exploring the API][12] | [Project Requirements][21] |
-| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] | [Order Does Not Exist][26] |
-| 6 | [Who Carries the Ship?][15] | [Hauler and its Dock][18] | [Incomplete Order][27] |
+| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] |  |
+| 6 | [Who Carries the Ship?][15] | [Hauler and its Dock][18] |  |
 | 7 | [Creating Resources][8] | [Creating Resources][14] |  |
 | 8 | | [Shipping Ships Client][28] |  |
 
