@@ -4,7 +4,7 @@ Remember that json-server allowed you to embed all related resources? It was the
 
 For example, if you wanted to see all of the ships that a hauler was carrying, you could use the `_embed` query string parameter.
 
-GET http://localhost:8000/hauler
+GET http://localhost:8000/hauler/1
 
 ```json
 {
@@ -14,7 +14,7 @@ GET http://localhost:8000/hauler
 }
 ```
 
-GET http://localhost:8000/hauler?_embed=ships
+GET http://localhost:8000/hauler/1?_embed=ships
 
 ```json
 {
