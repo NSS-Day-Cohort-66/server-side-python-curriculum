@@ -22,6 +22,13 @@ Once the repository is created, you need to add your teammates as collaborators.
 6. Click the **Add person to this repository** button.
 7. Repeat steps 3-6 for each teammate.
 
+## Exit Imperative Virtual Environment
+
+If your virtual environment for the last project is still active in your terminal session, you have one of two options:
+
+1. Use the `exit` command in the terminal to close the virtual environment.
+2. Open a new terminal window.
+
 ## Cloning the repository
 
 1. Everyone on the team can now clone the repository to their `workspace` directory.
