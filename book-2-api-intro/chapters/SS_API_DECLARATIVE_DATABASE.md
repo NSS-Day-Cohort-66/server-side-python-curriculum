@@ -19,7 +19,7 @@ The term _seed the database_ simply means to load your database with some initia
 
 1. Open the `shipping.sql` file in VS Code.
 2. You will see a comment on line 12.
-3. Put your cursor on line 12 and highlight everything from that line of code to the end. You can use **Cmd+Shift+Down Arrow** on Mac, or **Ctrl+Chift+Down Arrow** on Windows.
+3. Put your cursor on line 12 and highlight everything from that line of code to the end. You can use **Cmd+Shift+Down Arrow** on Mac, or **Ctrl+Shift+Down Arrow** on Windows.
 4. Press **Cmd+r+r** on Mac or **Ctrl+r+r** on Window to run all of the SQL statements. If this doesn't work, perhaps you set up the keyboard shortcut incorrectly. Watch the video again and make sure the configuration is correct.
 
 ## Next Step
