@@ -30,15 +30,6 @@ Once you have completed all of the Core Projects, your job is to do a self-asses
 | --- | --- |
 | 1   | [Assess Your Competencies in Python and SQL](./chapters/SNAKES_ON_A_BRAIN.md) |
 
-## 🔐 Group Project
-
-Once people complete all of the core material above, groups of 3-4 will be formed to work together on a group project.
-
-| # | Project&nbsp;Name | Description |
-|--|--|--|
-|1| [Rare Publishing Platform][38] | Your first, large full-stack group project. You will be building an API service with Python, and using SQL to manage the permanent state in your database. |
-|2| [Choose Your Own Adventure][39] | You and your teammates can choose the concept, the user stories, the wireframes, the data, and the acceptance criteria for your own API. |
-
 ## 🧭 Explorer Chapters
 
 Explorer chapters are optional and give you the opportunity to expand on the Core chapters and the concepts in the book.
@@ -48,6 +39,16 @@ Explorer chapters are optional and give you the opportunity to expand on the Cor
 | 1 | [Sort Resources by Price][29] |
 | 2 | [Get Orders by Metal, Style, or Size][30] |
 | 3 | [Accept Headers][31] |
+
+
+## 🔐 Group Project
+
+Once people complete all of the core material above, groups of 3-4 will be formed to work together on a group project.
+
+| # | Project&nbsp;Name | Description |
+|--|--|--|
+|1| [Rare Publishing Platform][38] | Your first, large full-stack group project. You will be building an API service with Python, and using SQL to manage the permanent state in your database. |
+|2| [Choose Your Own Adventure][39] | You and your teammates can choose the concept, the user stories, the wireframes, the data, and the acceptance criteria for your own API. |
 
 
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
