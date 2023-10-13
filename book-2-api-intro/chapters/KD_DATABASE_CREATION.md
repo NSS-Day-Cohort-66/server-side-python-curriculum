@@ -21,7 +21,7 @@ CREATE TABLE `Metals`
 Make sure you set up the foreign key constraints on the Orders table. You have to define the column, and separately define the foreign ke constraint.
 
 ```sql
-[metal_id] INTEGER NOT NULL,
+`metal_id` INTEGER NOT NULL,
 FOREIGN KEY(`metal_id`) REFERENCES `Metals`(`id`)
 ```
 
