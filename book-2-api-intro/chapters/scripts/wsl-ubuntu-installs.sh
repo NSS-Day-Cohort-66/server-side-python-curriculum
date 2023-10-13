@@ -11,6 +11,7 @@ code --install-extension padjon.save-and-run-ext --force
 code --install-extension qwtel.sqlite-viewer --force
 code --install-extension ms-python.pylint --force
 code --install-extension ms-python.black-formatter --force
+code --install-extension mtxr.sqltools-driver-sqlite --force
 
 
 echo "Update Ubuntu and install required packages"
