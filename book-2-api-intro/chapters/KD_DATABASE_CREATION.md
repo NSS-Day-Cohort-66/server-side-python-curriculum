@@ -3,6 +3,7 @@
 ## Setup
 
 1. In your project directory, create a `kneeldiamonds.sqlite3` file to be your database.
+2. In your project directory, create a `kneel.sql` file where you will store your SQL queries.
 
 ## Creating the Tables
 
