@@ -5,13 +5,13 @@ code --install-extension ms-python.python --force
 code --install-extension ms-python.vscode-pylance --force
 code --install-extension njpwerner.autodocstring --force
 code --install-extension alexcvzz.vscode-sqlite --force
+code --install-extension qwtel.sqlite-viewer --force
+code --install-extension mtxr.sqltools-driver-sqlite --force
 code --install-extension streetsidesoftware.code-spell-checker --force
 code --install-extension ms-vscode-remote.remote-wsl --force
 code --install-extension padjon.save-and-run-ext --force
-code --install-extension qwtel.sqlite-viewer --force
 code --install-extension ms-python.pylint --force
 code --install-extension ms-python.black-formatter --force
-code --install-extension mtxr.sqltools-driver-sqlite --force
 
 
 echo "Update Ubuntu and install required packages"
