@@ -33,6 +33,6 @@ GET http://localhost:8088/hauler/1?_expand=hauler
 
 ## Next Steps
 
-Once the team expands the related resource of dock on the hauler, its time to support POST operations, but in a declarative stlye.
+Once the team expands the related resource of dock on the hauler, its time to support POST operations, but in a declarative style.
 
 [Supporting POST chapter >](./SS_API_DECLARATIVE_POST.md)

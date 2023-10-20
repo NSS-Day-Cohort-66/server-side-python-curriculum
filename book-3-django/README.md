@@ -16,8 +16,8 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 | # | 🐕‍🦺 DeShawn Dog Walking API <br/> <sub>_(Guided Tour)_</sub> | 🪨 Rock of Ages <br/> <sub>_(Using Authentication)_</sub> | 📚 Reader's Digest <br/> <sub>_(Many to Many)_</sub> | 🕹 Level Up <br/> <sub>_(Advanced Practice)_</sub> |
 |--|--|--|--| -- |
 | 1 | [Installations and Setup][41] | [Installations and Setup][42] | [Installations and Setup][63] | [Level Up API Setup][1] |
-| 2 | [Database Models][2] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Defining the Models][43]  <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |  | [Karen's Requirements][3] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |
-| 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Overview][44] <br/> <sub style="font-size:0.85rem;">\#authentication</sub> |  |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
+| 2 | [Database Models][2] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [Defining the Models][43]  <br/> <sub style="font-size:0.85rem;">\#database #models</sub> | [ERD and Models][64] | [Karen's Requirements][3] <br/> <sub style="font-size:0.85rem;">\#database #models</sub> |
+| 3 | [ORM not SQL][14] <br/> <sub style="font-size:0.85rem;">\#orm</sub> | [Authentication Overview][44] <br/> <sub style="font-size:0.85rem;">\#authentication</sub> | [Authentication with ViewSets][65] |  [Level Up Client][5] <br/> <sub style="font-size:0.85rem;">\#react #components</sub> |
 | 4 | [Views][4] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Types View][47] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  |  [Karen Cares][6] <br/> <sub style="font-size:0.85rem;">\#data \#fixtures</sub> |
 | 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Rocks View][45] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  | [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
 | 6 | [URLs][12] <br/> <sub style="font-size:0.85rem;">\#routes</sub> | [Database Fixtures][46] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> |  |  [Exposing GET Requests][11] <br/> <sub style="font-size:0.85rem;">\#orm #viewset \#serializer \#router</sub> |
@@ -107,3 +107,5 @@ Explorer chapters give you the opportunity to expand on the Core chapters and th
 [61]: ./chapters/SQL_REFRESH.md
 [62]: ./chapters/ROA_FILTERING_BY_USER.md
 [63]: ./chapters/RD_SETUP.md
+[64]: ./chapters/RD_MODELS.md
+[65]: ./chapters/RD_AUTH.md

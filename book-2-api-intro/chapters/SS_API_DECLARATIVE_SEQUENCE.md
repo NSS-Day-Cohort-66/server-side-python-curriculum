@@ -16,4 +16,4 @@ Watch the following **Debug Python - Call Stack** video for a short introduction
 
 When your sequence diagram is complete, your team must contact one of your coaches for a review. Once that review is done, and any corrections are made, you can move on to the next chapter.
 
-[Go to POST implementation chapter >](./SS_API_DECLARATIVE_POST.md)
+[Go to embedding chapter >](./SS_API_DECLARATIVE_EMBED_DOCK_HAULERS.md)
