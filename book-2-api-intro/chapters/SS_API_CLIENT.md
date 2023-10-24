@@ -77,17 +77,6 @@ Your skills and understand of React decay quickly now that you are learning Pyth
 
 **Then** a list of all docks should be rendered. Each item in the list should display the dock name and its tonnage capacity
 
-
----
-
-## View all docks
-
-**Given** a person wants to see all docks
-
-**When** the person visits http://localhost:3000/docks
-
-**Then** a list of all docks should be rendered. Each item in the list should display the dock name and its tonnage capacity
-
 **And** underneath each dock, as a bulleted list, all haulers currently assigned to that dock should be rendered.
 
 
