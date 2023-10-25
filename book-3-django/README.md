@@ -21,7 +21,7 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 | 4 | [Views][4] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Types View][47] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Handling Book Requests][66] | [Karen Cares][6] <br/> <sub style="font-size:0.85rem;">\#data \#fixtures</sub> |
 | 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Rocks View][45] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Getting Categories][67] | [Level Up Gamers][8] <br/> <sub style="font-size:0.85rem;">\#authentication \#tokens</sub> |
 | 6 | [URLs][12] <br/> <sub style="font-size:0.85rem;">\#routes</sub> | [Database Fixtures][46] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> | [Reviewing Books][68] | [Exposing GET Requests][11] <br/> <sub style="font-size:0.85rem;">\#orm #viewset \#serializer \#router</sub> |
-| 7 | [Your First Migration][16] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Expand Rock Type and User][48] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> |  | [GameList and EventList Components][13] <br/> <sub style="font-size:0.85rem;">\#react \#map</sub> |
+| 7 | [Your First Migration][16] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Expand Rock Type and User][48] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Reader's Digest Client][69] | [GameList and EventList Components][13] <br/> <sub style="font-size:0.85rem;">\#react \#map</sub> |
 | 8 | [Make an Appointment][40] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Creating Rocks][51] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  |  [Exposing POST Requests][15] <br/> <sub style="font-size:0.85rem;">\#create \#post</sub> |
 | 9 |  | [Deleting Rocks][54] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  | [GameForm and EventForm Components][17] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
 | 10 |  | [Only My Rocks][62] <br/> <sub style="font-size:0.85rem;">\#filter \#query-params</sub> |  | [Exposing PUT Requests][19] <br/> <sub style="font-size:0.85rem;">\#PUT \#update</sub> |
@@ -112,3 +112,4 @@ Explorer chapters give you the opportunity to expand on the Core chapters and th
 [66]: ./chapters/RD_BOOKS.md
 [67]: ./chapters/RD_CATEGORIES.md
 [68]: ./chapters/RD_REVIEWS.md
+[69]: ./chapters/RD_CLIENT.md
