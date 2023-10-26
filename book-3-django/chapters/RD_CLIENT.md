@@ -60,7 +60,9 @@ Django makes handling many-to-many relationships pretty easy with using the **se
 book.categories.set(category_ids)
 ```
 
-However, beginners tend to have a harder time generating the array of primary keys in the client! Therefore, here's a video that shows how to handle checkboxes in a form using the `Set()` data structure, and then converting it to an array before performing the POST operation.
+However, beginners tend to have a harder time generating the array of primary keys in the client! Therefore, here's a **Readers Digest - Category Checkboxes** video that shows how to handle checkboxes in a form using the `Set()` data structure, and then converting it to an array before performing the POST operation.
+
+The length of the video is 8:11.
 
 
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/gWiYg6hTGxgMorSvnU5D)
+[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/wyxsjxSNbIjV4C6FEZOB)
