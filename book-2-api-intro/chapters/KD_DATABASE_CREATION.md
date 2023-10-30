@@ -27,6 +27,8 @@ FOREIGN KEY(`metal_id`) REFERENCES `Metals`(`id`)
 
 This is your first time using SQL to create a relational database. Working with your instruction team is a good idea if you're stuck on anything or need to talk about concepts.
 
+> 🧨 DANGER! This project requires you to create a table named **Order**, but that is a reserved word in SQL, so make sure that you wrap that word in backticks.
+
 Once you have all tables defined in SQL, run the statements and select `kneeldiamonds.sqlite3` from the list of options that appear. Then open the file and verify that all three tables got created.
 
 Next: [Requirements chapter >](./KD_REQUIREMENTS.md)
