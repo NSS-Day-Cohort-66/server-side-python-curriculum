@@ -82,7 +82,7 @@ Explorer chapters give you the opportunity to expand on the Core chapters and th
 [31]: ./chapters/LU_EVENT_ATTENDEES.md
 [33]: ./chapters/LU_JOINED_Q_FILTER.md
 [35]: ./chapters/LU_MODEL_PROPERTY.md
-[36]: ./chapters/LU_POST_VALIDATION.md
+[36]: https://mystery.knightlab.com/
 [37]: ./chapters/LU_FILTER_GAMES.md
 [38]: ./chapters/LU_CATCHING_ERRORS.md
 [39]: ./chapters/LU_SERIALIZER_DEPTH.md
