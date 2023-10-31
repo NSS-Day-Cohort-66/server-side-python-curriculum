@@ -67,14 +67,6 @@ class RockSerializer(serializers.ModelSerializer):
     router.register(r'rocks', RockView, 'rock')
     ```
 4. Perform a GET request and verify that you get an empty list back with a 200 status code.
-5. Perform a POST request with the following payload. Make sure you have the **Authorization** header set with a valid token from your database.
-    ```json
-    {
-        "name": "Cathy",
-        "weight": 1.3,
-        "typeId": 4
-    }
-    ```
 
 ## Client Keys and Server Keys
 
