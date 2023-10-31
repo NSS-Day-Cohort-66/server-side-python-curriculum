@@ -60,9 +60,9 @@ from .rock_view import RockView
 
 ## Adding the URL
 
-So far we’ve set up the view and serializer but not which URL to use for the view. We need to add `/rocks` to be supported by the API.
+So far we’ve set up the view and serializer but not which URL to use for the view. We need to add `/types` to be supported by the API.
 
-If a client sends a `GET` request to either `http://localhost:8000/rocks` or `http://localhost:8000/rocks/1`, we want the server to respond with the appropriate method.
+If a client sends a `GET` request to either `http://localhost:8000/types` or `http://localhost:8000/types/1`, we want the server to respond with the appropriate method.
 
 You will use a built-in class in Django REST called the `DefaultRouter`. The `DefaultRouter` sets up the resource for each method that is present on the view.
 
@@ -73,20 +73,20 @@ Add the following import statements at the top of the `urls.py` module.
 ```py
 from django.conf.urls import include
 from rest_framework import routers
-from rockapi.views import RockView
+from rockapi.views import TypeView
 ```
 
 In the same file, above the current `urlpatterns` variable, add the following:
 
 ```py
 router = routers.DefaultRouter(trailing_slash=False)
-router.register(r'rocks', RockView, 'rock')
+router.register(r'types', TypeView, 'type')
 ```
-The `trailing_slash=False` tells the router to accept `/rocks` instead of `/rocks/`. It’s a very annoying error to come across, when your server is not responding and the code _looks_ right, the only issue is your fetch url is missing a `/` at the end.
+The `trailing_slash=False` tells the router to accept `/types` instead of `/types/`. It’s a very annoying error to come across, when your server is not responding and the code _looks_ right, the only issue is your fetch url is missing a `/` at the end.
 
-The next line is what sets up the `/rocks` resource. The first parameter, `r'rocks`, is setting up the URL. The second `RockView` is telling the server which view to use when it sees that url.
+The next line is what sets up the `/types` resource. The first parameter, `r'types`, is setting up the URL. The second `TypeView` is telling the server which view to use when it sees that url.
 
-The third, `rock`, is called the base name. You’ll only see the base name if you get an error in the server. It acts as a nickname for the resource and is usually the singular version of the URL.
+The third, `type`, is called the base name. You’ll only see the base name if you get an error in the server. It acts as a nickname for the resource and is usually the singular version of the URL.
 
 ## Video Walkthrough
 
