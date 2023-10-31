@@ -127,9 +127,3 @@ rock.weight = request.data["weight"]
 rock.name = request.data["name"]
 rock.type = request.data["typeId"]
 ```
-
-## Video Walkthrough
-
-Here is a 4:31 minute walkthrough of implementing the code with explanations.
-
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/vyrXoRQVjaoBycysiIal)
