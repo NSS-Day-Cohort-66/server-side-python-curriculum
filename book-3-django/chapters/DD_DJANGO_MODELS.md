@@ -1,6 +1,6 @@
 # Model Classes
 
-Django uses special classes to interact with the database. They are called _Models_. For every table that you have in your database, you are going to create a corresponding moduls and class in your `models` directory.
+Django uses special classes to interact with the database. They are called _Models_. For every table that you have in your database, you are going to create a corresponding module and class in your `models` directory.
 
 Open the `models/city.py` module to see how a database model class is defined. This is a fairly simple model since the database table for cities only has two properties.
 
