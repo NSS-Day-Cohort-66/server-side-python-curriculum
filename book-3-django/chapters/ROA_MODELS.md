@@ -6,7 +6,7 @@ Time to create your ERD for the Rock of Ages API project. Create this ERD in DBD
 <summary>Expand to get DBDiagram definitions</summary>
 
 ```txt
-Table User [headercolor: #2c3e50] {
+Table User {
   id int pk
   first_name varchar
   last_name varchar
@@ -14,7 +14,7 @@ Table User [headercolor: #2c3e50] {
   username varchar
 }
 
-Table Rock [headercolor: #f39c12] {
+Table Rock {
   id int pk
   name varchar
   weight decimal
@@ -22,7 +22,7 @@ Table Rock [headercolor: #f39c12] {
   user_id int [ref: > User.id]
 }
 
-Table Type [headercolor: #f39c12] {
+Table Type {
   id int pk
   label varchar
 }
