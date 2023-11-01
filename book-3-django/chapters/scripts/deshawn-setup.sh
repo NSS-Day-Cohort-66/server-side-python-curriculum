@@ -393,7 +393,7 @@ class CityView(ViewSet):
         city = City.objects.get(pk=pk)
 
         # Step 2: Serialize the city record as JSON
-        serialized = CitySerializer(city, context={'request': request})
+        serialized = CitySerializer(city, many=False)
 
         # Step 3: Send JSON response to client with 200 status code
         return Response(serialized.data, status=status.HTTP_200_OK)
@@ -429,7 +429,7 @@ class DogView(ViewSet):
         dog = Dog.objects.get(pk=pk)
 
         # Step 2: Serialize the dog record as JSON
-        serialized = DogSerializer(dog, context={'request': request})
+        serialized = DogSerializer(dog, many=False)
 
         # Step 3: Send JSON response to client with 200 status code
         return Response(serialized.data, status=status.HTTP_200_OK)
@@ -466,7 +466,7 @@ class WalkerView(ViewSet):
         walker = Walker.objects.get(pk=pk)
 
         # Step 2: Serialize the walker record as JSON
-        serialized = WalkerSerializer(walker, context={'request': request})
+        serialized = WalkerSerializer(walker, many=False)
 
         # Step 3: Send JSON response to client with 200 status code
         return Response(serialized.data, status=status.HTTP_200_OK)

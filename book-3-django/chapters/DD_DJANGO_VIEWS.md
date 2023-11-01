@@ -18,7 +18,7 @@ class CityView(ViewSet):
 
     def retrieve(self, request, pk=None):
         city = City.objects.get(pk=pk)
-        serialized = CitySerializer(city, context={'request': request})
+        serialized = CitySerializer(city, many=False)
         return Response(serialized.data, status=status.HTTP_200_OK)
 
     def list(self, request):
@@ -64,7 +64,7 @@ class AppointmentView(ViewSet):
 
     def retrieve(self, request, pk=None):
         appointment = Appointment.objects.get(pk=pk)
-        serialized = AppointmentSerializer(appointment, context={'request': request})
+        serialized = AppointmentSerializer(appointment, many=False)
         return Response(serialized.data, status=status.HTTP_200_OK)
 
     def list(self, request):
