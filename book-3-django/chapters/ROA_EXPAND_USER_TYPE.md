@@ -25,7 +25,7 @@ You only get the numeric foreign key value in the resulting JSON.
 }
 ```
 
-The problem with this is that the client also wants to display the label field of the rock type in the browser. Note that the **displayRocks** function the the **RockList** component wants to access that value with `rock.type.label`.
+The problem with this is that the client also wants to display the label field of the rock type in the browser. Note that the **displayRocks** function in the **RockList** component wants to access that value with `rock.type.label`.
 
 ```js
 const displayRocks = () => {
