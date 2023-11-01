@@ -110,7 +110,7 @@ Copy the following JSON into the `rocks.json` file.
 
 ## Load Your Fixtures
 
-In your terminal make sure you back in the main `rockproject` directory. Then run the following commands to load that initial data into your database.
+In your terminal make sure you back in the main `rock-of-ages` _(or whatever you named your repo)_ directory. Then run the following commands to load that initial data into your database.
 
 ```sh
 python3 manage.py loaddata types rocks
