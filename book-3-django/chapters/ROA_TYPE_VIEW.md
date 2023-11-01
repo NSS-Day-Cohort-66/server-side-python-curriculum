@@ -55,7 +55,7 @@ class TypeSerializer(serializers.ModelSerializer):
 #### `rockproject/rockapi/views/__init__.py`
 
 ```py
-from .rock_view import RockView
+from .type_view import TypeView
 ```
 
 ## Adding the URL
