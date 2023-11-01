@@ -1,6 +1,6 @@
 # Your First View
 
-Views are where the logic, or brains, of your application lives. Up to this point, all that logic of what should happen when a client makes a request to your API happened in the `request_handler.py` module.
+Views are where the logic, or brains, of your application lives. Up to this point, all that logic of what should happen when a client makes a request to your API happened in the `json_server.py` module.
 
 In a Django application, you are going to break all of that up into separate views. Each view will define what should happen for a single resource.
 
