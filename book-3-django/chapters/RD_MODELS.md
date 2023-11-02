@@ -71,9 +71,3 @@ After the migration file is created, then execute it to create the tables.
 ```sh
 python3 manage.py migrate
 ```
-
-## Video Walkthrough
-
-Here is a 4:31 minute walkthrough of implementing the code with explanations.
-
-[<img src="./images/video-play-icon.gif" height="75rem" />](https://watch.screencastify.com/v/vyrXoRQVjaoBycysiIal)
