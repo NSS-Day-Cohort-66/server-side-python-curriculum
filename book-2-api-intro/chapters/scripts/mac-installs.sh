@@ -78,7 +78,7 @@ fi
 if which pipenv >/dev/null 2>&1; then
   echo "pipenv and autopep8 already installed"
 else
-  python3 -m pip install pipenv autopep8
+  python3 -m pip install pipenv autopep8 django
 
   # Verify installation
   if ! which pipenv >/dev/null 2>&1; then

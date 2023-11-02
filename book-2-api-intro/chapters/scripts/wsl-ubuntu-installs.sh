@@ -59,7 +59,7 @@ fi
 if [ $(python3 -m pip list | grep -c pipenv) != 1 ];
 then
   echo Install pipenv and autopep8
-  python3 -m pip install pipenv autopep8
+  python3 -m pip install pipenv autopep8 django
 else
   echo Skipping pipenv and autopep8 install
 fi
