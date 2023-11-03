@@ -24,6 +24,8 @@ Once you have created the ERD, you can review with teammates or instructors if y
 
 ## Django Models
 
+> 🧨 Before moving on make sure you have defined all of the models for each table you defined in your ERD. It is required before reading on.
+
 ## Book Model
 
 As you define your models it's time to learn how Django makes it easy for developers to create and manage many-to-many relationships in the database. Remember the the intersection table is what stores the **actual** relationships between books and categories. However, when you have an instance of a **Book** class, it can be tedious to traverse the intersection table, then to the **Category** table to find all of the categories assigned to the book.
