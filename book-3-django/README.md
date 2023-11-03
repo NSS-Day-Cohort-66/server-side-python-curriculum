@@ -25,15 +25,15 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 | 8 | [Make an Appointment][40] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Creating Rocks][51] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  |  [Exposing POST Requests][15] <br/> <sub style="font-size:0.85rem;">\#create \#post</sub> |
 | 9 |  | [Deleting Rocks][54] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  | [GameForm and EventForm Components][17] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
 | 10 |  | [Only My Rocks][62] <br/> <sub style="font-size:0.85rem;">\#filter \#query-params</sub> |  | [Exposing PUT Requests][19] <br/> <sub style="font-size:0.85rem;">\#PUT \#update</sub> |
-| 11 |  |  |  |  [UpdateGame and UpdateEvent Components][20] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
-| 12 |  |  |  |  [Exposing DELETE Requests][23] <br/> <sub style="font-size:0.85rem;">\#DELETE \#destroy</sub> |
+| 11 |  |  |  | [UpdateGame and UpdateEvent Components][20] <br/> <sub style="font-size:0.85rem;">\#react \#forms</sub> |
+| 12 |  |  |  | [Exposing DELETE Requests][23] <br/> <sub style="font-size:0.85rem;">\#DELETE \#destroy</sub> |
 | 13 |  |  |  | [Leaving and Joining Events][35] |
 
-Once you have completed all of the Core Projects, your job is to do a self-assessment. Click on the link below to see what this book's assessment instructions are. Once complete, reach out to an instructor to review your vocabulary.
+Once you have completed all of the Core Projects, your job is to do a self-assessment of your understanding and competencies that you have built so far during your time at NSS. When you are ready to discuss, reach out to an instructor.
 
 | #   | 🎓 Self-Assessment |
 | --- | --- |
-| 1   | [Assess Your Competencies with Django][55] |
+| 1   | [Full Stack Reflections][55] |
 
 ## 🧭 Explorer Chapters
 
@@ -98,7 +98,7 @@ Explorer chapters give you the opportunity to expand on the Core chapters and th
 [50]: ./chapters/HR_USER_SERIALIZER.md
 [51]: ./chapters/ROA_CREATE_ROCK.md
 [54]: ./chapters/ROA_DELETE.md
-[55]: ./chapters/DJANGO_ASSESSMENT.md
+[55]: ./chapters/DJANGO_RELFECTION.md
 [56]: ./chapters/ELATED_APPOINTMENTS.md
 [57]: ./chapters/ELATED_CLIENTS.md
 [58]: ./chapters/ELATED_EQUIPMENT_TYPES.md
