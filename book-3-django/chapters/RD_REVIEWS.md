@@ -19,7 +19,7 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework import serializers
 from digestapi.models import Review
-from digestapi.permissions import IsOwnerOrReadOnly
+from rest_framework import permissions
 
 class ReviewSerializer(serializers.ModelSerializer):
     is_owner = serializers.SerializerMethodField()
@@ -35,7 +35,7 @@ class ReviewSerializer(serializers.ModelSerializer):
 
 
 class ReviewViewSet(viewsets.ViewSet):
-    permission_classes = [IsOwnerOrReadOnly]
+    permission_classes = [permissions.AllowAny]
 
     def list(self, request):
         # Get all reviews
