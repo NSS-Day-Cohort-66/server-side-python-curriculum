@@ -58,7 +58,7 @@ Check if there is a **.vscode** folder in your directory. If there isn't, press 
 > `honey-rae-server/.vscode/settings.json`
 
 ```json
-"python.linting.pylintArgs": [
+"pylint.args": [
     "--load-plugins=pylint_django",
     "--django-settings-module=honeyrae.settings",
 ],
@@ -68,7 +68,7 @@ If there is no `settings.json` file, create one and add the following to it.
 
 ```json
 {
-    "python.linting.pylintArgs": [
+    "pylint.args": [
         "--load-plugins=pylint_django",
         "--django-settings-module=honeyrae.settings",
     ],

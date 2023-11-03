@@ -15,11 +15,9 @@ Just as you did in the book serializer, you will have a custom property added du
     <summary>Review ViewSet Code</summary>
 
 ```py
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, serializers, permissions
 from rest_framework.response import Response
-from rest_framework import serializers
 from digestapi.models import Review
-from rest_framework import permissions
 
 class ReviewSerializer(serializers.ModelSerializer):
     is_owner = serializers.SerializerMethodField()

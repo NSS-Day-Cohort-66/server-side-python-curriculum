@@ -21,7 +21,7 @@ good-names=i,j,ex,pk
 In Visual Studio Code, `cmd+shift+p` and open "Preferences: Open Settings (JSON)". Add the following configuration item to the object.
 
 ```json
-"python.linting.pylintArgs": [
+"pylint.args": [
     "--load-plugins=pylint_django"
 ],
 ```
