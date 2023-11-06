@@ -76,8 +76,9 @@ class ReviewViewSet(viewsets.ViewSet):
             review = Review.objects.get(pk=pk)
 
             # Check if the user has permission to delete
-            # Will return 403 automatically if permission check fails
-            self.check_object_permissions(request, review)
+            # Will return 403 if authenticated user is not author
+            if review.user.id != request.user.id:
+                return Response(status=status.HTTP_403_FORBIDDEN)
 
             # Delete the review
             review.delete()
