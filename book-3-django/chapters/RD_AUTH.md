@@ -7,7 +7,7 @@ In the last project, you used simple Python functions named `register` and `logi
 Create a file in the **views** directory named `users.py`. Then paste the following code into the file.
 
 ```py
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import serializers
@@ -26,6 +26,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 class UserViewSet(viewsets.ViewSet):
     queryset = User.objects.all()
+    permission_classes = [permissions.AllowAny]
 
     @action(detail=False, methods=['post'], url_path='register')
     def register_account(self, request):
