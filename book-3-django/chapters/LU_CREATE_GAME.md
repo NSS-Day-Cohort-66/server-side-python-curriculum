@@ -36,18 +36,8 @@ export const GameForm = () => {
     const navigate = useNavigate()
     const [gameTypes, setGameTypes] = useState([])
 
-    /*
-        Since the input fields are bound to the values of
-        the properties of this state variable, you need to
-        provide some default values.
-    */
-    const [currentGame, setCurrentGame] = useState({
-        skillLevel: 1,
-        numberOfPlayers: 0,
-        title: "",
-        maker: "",
-        gameTypeId: 0
-    })
+    // Decision: Should you provide initial property values?
+    const [currentGame, setCurrentGame] = useState({})
 
     useEffect(() => {
         // TODO: Get the game types, then set the state
@@ -77,17 +67,11 @@ export const GameForm = () => {
                     // Prevent form from being submitted
                     evt.preventDefault()
 
-                    const game = {
-                        maker: currentGame.maker,
-                        title: currentGame.title,
-                        number_of_players: parseInt(currentGame.numberOfPlayers),
-                        skill_level: parseInt(currentGame.skillLevel),
-                        game_type: parseInt(currentGame.gameTypeId)
-                    }
+                    const game = {}
 
                     // Send POST request to your API
-                    createGame(game)
-                        .then(() => navigate("/games"))
+
+                    // Navigate to /games on success
                 }}
                 className="btn btn-primary">Create</button>
         </form>
@@ -107,14 +91,11 @@ Add the following button to the header of the game list component JSX. When clic
 >Register New Game</button>
 ```
 
-Then add the following route to the **`ApplicationViews`** component.
-
-```jsx
-<Route path="/games/new" element={<GameForm />} />
-```
+Then add a route to the **`ApplicationViews`** component that renders the game form when `/games/new` is the browser URL.
 
 
 # On your own
-- Create the new event form 
+
+- Create the new event form
 - Make a new route for the new component
 - Add a “Register new Event” button to the event list that redirects to the form
