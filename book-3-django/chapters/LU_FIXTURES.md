@@ -90,11 +90,10 @@ SELECT * FROM levelupapi_gametype;
 
 ## Default Gamer
 
-To create a full Gamer user account in your database, you need a record in three tables.
+To create a full gamer user account in your database, you need a record in three tables.
 
 1. `auth_user` - *which is the authentication table that Django builds for you out of the box.*
 1. `authtoken_token` - *which also is part of the built-in authentication system of Django.*
-1. `levelupapi_gamer` - *which is the table that gets created by Django from your **`Gamer`** model class that you wrote in the `levelup-server/levelupapi/models/gamer.py` module.*
 
 Create the following three files with the corresponding contents.
 
@@ -154,7 +153,7 @@ SELECT * FROM authtoken_token;
 
 ## Practice: Seeding Games
 
-Using the JSON above, see if you can create a `games.json` fixture that seeds the database with two game records that are related to the Gamer record you created above.
+Using the JSON above, see if you can create a `games.json` fixture that seeds the database with two game records that are related to the User record you created above.
 
 ## Practice: Seeding Events
 

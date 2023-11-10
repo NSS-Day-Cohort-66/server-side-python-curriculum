@@ -17,8 +17,6 @@ Tokens are used by a server and its clients. When the user first registers on th
 
 1. A record in the `User` table is created.
 
-1. A record in the `Gamers` table is created.
-
 1. A new Token is generated for the client by the server. That Token is unique to the user that was just created.
 
 1. The Token is sent back to the client so that it can be used on future requests to identify the user. This way, the user doesn't have to keep filling out their username and password each time a new action is performed.
@@ -85,14 +83,8 @@ def register_user(request):
         last_name=request.data['last_name']
     )
 
-    # Now save the extra info in the levelupapi_gamer table
-    gamer = Gamer.objects.create(
-        bio=request.data['bio'],
-        user=new_user
-    )
-
     # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=gamer.user)
+    token = Token.objects.create(user=new_user)
     # Return the token to the client
     data = { 'token': token.key }
     return Response(data)
