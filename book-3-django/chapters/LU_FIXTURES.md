@@ -138,28 +138,11 @@ Create the following three files with the corresponding contents.
 ]
 ```
 
-
-> #### `levelup-server/levelupapi/fixtures/gamers.json`
-
-```json
-[
-    {
-        "model": "levelupapi.gamer",
-        "pk": 1,
-        "fields": {
-            "user": 1,
-            "bio": "Me"
-        }
-    }
-]
-```
-
 Then execute the following commands.
 
 ```sh
 python3 manage.py loaddata users
 python3 manage.py loaddata tokens
-python3 manage.py loaddata gamers
 ```
 
 Once complete, each of those database tables will have one record in them. You can verify this by connecting to the database and running the following three SQL statements.
@@ -167,7 +150,6 @@ Once complete, each of those database tables will have one record in them. You c
 ```sql
 SELECT * FROM auth_user;
 SELECT * FROM authtoken_token;
-SELECT * FROM levelupapi_gamer;
 ```
 
 ## Practice: Seeding Games
