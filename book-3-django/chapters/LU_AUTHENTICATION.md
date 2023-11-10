@@ -88,7 +88,6 @@ def register_user(request):
     # Return the token to the client
     data = { 'token': token.key }
     return Response(data)
-
 ```
 
 ## Views Package Imports
