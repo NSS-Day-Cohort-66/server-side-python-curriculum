@@ -1,5 +1,5 @@
 # Listing Games and Events in the Client
-Now that we’ve added a way to get all games and events from the server, let’s display those lists in react.
+Now that we’ve added a way to get all games and events from the server, let’s display those lists in React.
 
 ## Client Code
 
