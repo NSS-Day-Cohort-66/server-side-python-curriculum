@@ -114,7 +114,7 @@ class BookViewSet(viewsets.ViewSet):
 Update your `urls.py` module to import the viewset.
 
 ```py
-from digestapi.views import BookViewSet, UserViewSet
+from digestapi.views import BookViewSet, UserViewSet, CategoryViewSet
 ```
 
 Then add the route to the default router.
