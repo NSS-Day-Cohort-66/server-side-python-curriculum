@@ -95,7 +95,7 @@ To create a full gamer user account in your database, you need a record in three
 1. `auth_user` - *which is the authentication table that Django builds for you out of the box.*
 1. `authtoken_token` - *which also is part of the built-in authentication system of Django.*
 
-Create the following three files with the corresponding contents.
+Create the following two files with the corresponding contents.
 
 > #### `levelup-server/levelupapi/fixtures/users.json`
 
