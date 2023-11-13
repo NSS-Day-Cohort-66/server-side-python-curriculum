@@ -53,7 +53,7 @@ Explorer chapters give you the opportunity to expand on the Core chapters and th
 
 | # | Project&nbsp;Name | Description |
 |--|--|--|
-| 👨‍👩‍👧‍👧 | [Rare - The REST API][28] | When you complete LevelUp and GamerRater, you will join some teammates to build a content management platform called Rare. You will build a client in React, and the API with Django REST. |
+| 👨‍👩‍👧‍👧 | [Rare - The REST API][28] | When you complete LevelUp, you will join some teammates to build a content management platform called Rare. You will build a client in React, and the API with Django REST. |
 
 
 [1]: ./chapters/DRF_INSTALLS.md
