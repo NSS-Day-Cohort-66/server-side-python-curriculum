@@ -34,6 +34,8 @@ class UserViewSet(viewsets.ViewSet):
         if serializer.is_valid():
             user = User.objects.create_user(
                 username=serializer.validated_data['username'],
+                username=serializer.validated_data['first_name'],
+                username=serializer.validated_data['last_name'],
                 password=serializer.validated_data['password']
             )
             token, created = Token.objects.get_or_create(user=user)
