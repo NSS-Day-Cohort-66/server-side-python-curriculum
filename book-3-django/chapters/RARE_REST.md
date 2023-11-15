@@ -2,6 +2,25 @@
 
 In this sprint, you are going to be creating a new API for the Rare client side application to consume.
 
+## Rare ERD from Database Team
+
+https://dbdiagram.io/d/5f885a013a78976d7b77cb74
+
+## Wireframes from Product Team
+
+https://miro.com/app/board/o9J_kiGCSK4=/
+
+
+## Sprint Process
+
+**Step 1:** Read every ticket and give it a weight. Use the ERD and wireframes above as resources.
+
+**Step 2:** Come to a team commitment for how many tickets you will complete in the sprint and communicate it to your Scrum Master _(an instructor)_.
+
+**Step 3:** Each teammate will pull a ticket into the doing column and assign him/herself to it.
+
+**Step 4:** Create branches and begin work. Create draft PRs ASAP and commit often.
+
 ## Setup
 
 Accept the assignments as usual. One member follows the assignment links and creates the group name in each. The other members follow the links and join the created teams.
@@ -39,13 +58,6 @@ migrations/**
 ### Issue Tickets
 The requirements for this project are more comprehensive than in V1. You will see many references to admin abilities. An admin is simply a user with more power. How do you give that power to a user? Update a user's `is_staff` property to `True`. Don't say we never gave you anything :)
 
-## Rare ERD from Database Team
-
-https://dbdiagram.io/d/5f885a013a78976d7b77cb74
-
-## Wireframes from Product Team
-
-https://miro.com/app/board/o9J_kiGCSK4=/
 
 ## Checklist
 
