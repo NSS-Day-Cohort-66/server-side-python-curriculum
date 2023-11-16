@@ -56,8 +56,8 @@ rareapi/migrations/**
 ```
 
 ### Issue Tickets
-The requirements for this project are more comprehensive than in V1. You will see many references to admin abilities. An admin is simply a user with more power. How do you give that power to a user? Update a user's `is_staff` property to `True`. Don't say we never gave you anything :)
 
+The requirements for this project are quite comprehensive. You will see many references to admin abilities. An admin is simply a user with more power. How do you give that power to a user? Update a user's `is_staff` property to `True`. Don't say we never gave you anything :)
 
 ## Checklist
 
@@ -67,9 +67,7 @@ Use this checklist to ensure that you have everything set up correctly before yo
 - [ ] API application created
 - [ ] Deleted `models.py` and `views.py`
 - [ ] Created `.gitignore`
-- [ ] Added `migrations/**` to gitignore
+- [ ] Added `rareapi/migrations/**` to gitignore
 - [ ] `.pylint` file created
 - [ ] `.vscode/settings.json` file created with proper config settings
 - [ ] `settings.py` updated with correct installed apps, CORS config, authentication/permission config, and middleware config
-
-
