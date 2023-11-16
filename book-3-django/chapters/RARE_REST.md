@@ -52,7 +52,7 @@ Once the project is set up, make sure you create a `.gitignore` file and put the
 Add the following pattern to the bottom of your gitignore file.
 
 ```txt
-migrations/**
+rareapi/migrations/**
 ```
 
 ### Issue Tickets
