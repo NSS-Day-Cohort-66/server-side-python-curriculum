@@ -41,7 +41,7 @@ Once you have completed all of the Core Projects, your job is to do a self-asses
 [1]: https://mystery.knightlab.com/
 [2]: ./chapters/SQL_REFRESH.md
 
-[3]: ./chapters/DDW_SETUP.md
+[3]: ./chapters/DD_SETUP.md
 [4]: ./chapters/DD_DJANGO_MODELS.md
 [5]: ./chapters/DD_DJANGO_ORM.md
 [6]: ./chapters/DD_DJANGO_VIEWS.md

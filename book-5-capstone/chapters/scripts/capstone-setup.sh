@@ -190,6 +190,19 @@ urlpatterns = [
 ]
 " > ./${PROJECT_NAME}project/urls.py
 
+echo "#!/bin/bash
+
+rm db.sqlite3
+rm -rf ./${PROJECT_NAME}api/migrations
+python3 manage.py migrate
+python3 manage.py makemigrations ${PROJECT_NAME}api
+python3 manage.py migrate ${PROJECT_NAME}api
+python3 manage.py loaddata users
+python3 manage.py loaddata tokens
+" > ./seed_database.sh
+
+chmod +x ./seed_database.sh
+
 
 echo '[FORMAT]
   good-names=i,j,ex,pk

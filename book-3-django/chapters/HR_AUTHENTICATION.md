@@ -1,8 +1,8 @@
 # Token Authentication with DRF
 
-## Understanding Auth Tokens
+## Review of Auth Tokens
 
-Tokens are used by a server and its clients. When the user first registers on the client a unique token is created for that user. The client uses the token in all fetch calls to the server to identify the user making the request.  For your application, when a user fills out the registration form, the following process occurs:
+Tokens are used by a server and its clients. When the user first registers on the client a unique token is created for that user. The client uses the token in all fetch calls to the server to identify the user making the request.  For your application, when a customer fills out the registration form, the following process occurs:
 
 1. Client sends a request to the server's `/register` route with the user's information in the body of the request.
 
@@ -18,9 +18,9 @@ Tokens are used by a server and its clients. When the user first registers on th
 
 ## Login and Register Functions
 
-Create the following module in your API application. It is commented, so please read the logic once you have it created.
+For this API, you will be following the strategy from Rock of Ages where the login and register functions are not part of a ViewSet, but just regular functions in the **auth.py** module. Create the following module in your API application. It is commented, so please read the logic once you have it created.
 
-> #### `honey-rae-server/repairsapi/views/auth.py`
+> #### `repairsapi/views/auth.py`
 
 <details>
     <summary>Expand for auth module code</summary>
@@ -153,15 +153,7 @@ def register_user(request):
 
 ## Views Package Imports
 
-The `views` directory is going to become a package so that other modules can import the functions. We tell our code it should be a module by adding an `__init__.py` file to the directory.
-
-Create the following file and place the code below in it.
-
-> #### `honey-rae-server/repairsapi/views/__init__.py`
-
-```py
-from .auth import login_user, register_user
-```
+Import both of those functions into the **views** package.
 
 ## Defining Routes
 
@@ -169,7 +161,7 @@ The last step is to establish some URL routes that any client application can us
 
 Completely replace the contents of the following file with the code below.
 
-> #### `honey-rae-server/honeyrae/urls.py`
+> #### `repairsproject/urls.py`
 
 ```py
 from django.contrib import admin
@@ -182,13 +174,4 @@ urlpatterns = [
     path('login', login_user),
     path('admin/', admin.site.urls),
 ]
-```
-
-In the code above, you will notice that the `register_user` and `login_user` functions are imported into the module. Then they are used to map a route to that view
-
-```py
-# Requests to http://localhost:8000/register will be routed to the register_user function
-path('register', register_user)
-# Requests to http://localhost:8000/login will be routed to the login_user function
-path('login', login_user)
 ```

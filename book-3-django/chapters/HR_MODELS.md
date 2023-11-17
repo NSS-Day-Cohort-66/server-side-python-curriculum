@@ -10,26 +10,26 @@ Create this ERD in your database diagramming tool of choice _(dbdiagram, DrawSQL
 <summary>Expand to get dbdiagram definitions</summary>
 
 ```txt
-Table User [headercolor: #2c3e50] {
+Table User {
   id int pk
   first_name varchar
   last_name varchar
   email varchar
 }
 
-Table Customer [headercolor: #f39c12] {
+Table Customer {
   id int pk
   address varchar
   user_id int [ref: > User.id]
 }
 
-Table Employee [headercolor: #f39c12] {
+Table Employee {
   id int pk
   specialty varchar
   user_id int [ref: > User.id]
 }
 
-Table ServiceTicket [headercolor: #f39c12] {
+Table ServiceTicket {
   id int pk
   customer_id int [ref: > Customer.id]
   employee_id int [ref: > Employee.id]
@@ -45,17 +45,24 @@ Table ServiceTicket [headercolor: #f39c12] {
 
 ## Django Models
 
-You are going to design these tables with something called a Model. You are going to make one Model for **Employee** , one for **Customer** and one for **ServiceTicket**.
+It's important to note at this point that there is additional information that needs to be captured about the two types of users in this API.
 
-The reason you removed `name` and `email` from the **Customer** table is because one of the great things about Django is that we automatically get a **User** model created for us that has `name`, and `email` fields on it.
+1. We need to capture the **address** for a customer, but the Django user table doesn't have an address field.
+2. We need to capture the **specialty** for an employee, but the Django user table doesn't have an specialty field.
+3. The **specialty** field isn't relevant for a customer.
+4. The **address** field isn't relevant for an employee.
 
-Unfortunately, the **User** model doesn't have `address`, so you have to create a **Customer** model with _just_ `address` to you can capture that information.
+When an employee logs in, data from the **User** table and data from the **Employee** table work together to represent that single user.
+
+When a customer logs in, data from the **User** table and data from the **Customer** table work together to represent that single user.
+
+Since data from **User/Customer** or **User/Employee** represents a single user, the relationship between them is **One To One** and not one to many.
 
 ### Customer Model
 
 Make the file below and copy pasta the code into it. This is the model that you will interact with, and it has a 1-1 relationship with the user model that lives inside Django.
 
-> #### `honeyrae-server/repairapi/models/customer.py`
+> #### `repairsapi/models/customer.py`
 
 ```py
 from django.db import models
@@ -76,17 +83,11 @@ class Customer(models.Model):
 
 Now that you have a model defined, it needs to be added to your project's models package.
 
-> #### `honeyrae-server/repairapi/models/__init__.py`
-
-```py
-from .customer import Customer
-```
-
 ### Employee Model
 
 Make the file below and copy pasta the code into it.
 
-> #### `honeyrae-server/repairapi/models/employee.py`
+> #### `repairsapi/models/employee.py`
 
 ```py
 from django.db import models
@@ -102,63 +103,26 @@ class Employee(models.Model):
         return f'{self.user.first_name} {self.user.last_name}'
 ```
 
-Now that you have a model defined, it needs to be added to your project's models package. Add the following code.
-
-> #### `honeyrae-server/repairapi/models/__init__.py`
-
-```py
-from .employee import Employee
-```
+Now that you have an employee model defined, it needs to be added to your project's models package.
 
 ### ServiceTicket Model
 
-Make the file below and copy pasta the code into it. Remember, Python conventions don't use camel casing - for variable names or file names. The only exception is class names _(as you see below)_.
+Make a `service_ticket.py` module and define a **ServiceTicket** model in it. Meet the requirements set in the ERD above 👆🏿.
 
-Note that there is a line defining each field that is in the ERD above 👆🏿.
+1. Foreign key to Customer
+2. Foreign key to Employee. Allow this foreign key to be blank and null since an employee is not assigned to a ticket on creation.
+3. Description
+4. Emergency
+5. Date completed. Allow this value to be blank and null as well since it won't have a value on creation.
 
-> #### `honeyrae-server/repairapi/models/service_ticket.py`
-
-```py
-from django.db import models
-
-
-class ServiceTicket(models.Model):
-    customer = models.ForeignKey("Customer", on_delete=models.CASCADE, related_name='submitted_tickets')
-    employee = models.ForeignKey("Employee", null=True, blank=True, on_delete=models.CASCADE, related_name='assigned_tickets')
-    description = models.CharField(max_length=155)
-    emergency = models.BooleanField(default=False)
-    date_completed = models.DateField(null=True, blank=True, auto_now=False, auto_now_add=False)
-```
-
-Now that you have a model defined, it needs to be added to your project's models package. Add the following code.
-
-> #### `honeyrae-server/repairapi/models/__init__.py`
-
-```py
-from .service_ticket import ServiceTicket
-```
+Make sure you add it to the models package when done.
 
 ## Migration of Models
 
-When your models are done, you can then create a migration to create the tables in your database.
-
-```sh
-python3 manage.py makemigrations repairsapi
-```
-
-Now that migrations are created, run the following command to execute your migrations and create the tables in your database.
-
-```sh
-python3 manage.py migrate
-```
-
-<img src="./images/honey-rae-migrations.gif" alt="animation showing the migration for the new models" width="800px" />
-
-You should now have a `db.sqlite3` file in the project folder.
+Once you are done defining your models, make a migration and then run the migration. You should now have a `db.sqlite3` file in the project folder.
 ## Resources
 
 * [Django Models](https://docs.djangoproject.com/en/3.2/topics/db/models/) - Overview of Django Models
-* [Extending the User Model](https://docs.djangoproject.com/en/dev/topics/auth/customizing/#extending-the-existing-user-model) - Explanation for how to add fields to the Django user
-* [Model Field Types](https://docs.djangoproject.com/en/3.2/ref/models/fields/#field-types) - All the options for data types in a model
+* [null and blank values for fields](https://docs.djangoproject.com/en/4.2/ref/models/fields/#null) - What **null** and **blank** mean
+* [One to One Relationships](https://docs.djangoproject.com/en/3.2/topics/db/models/#one-to-one-relationships) - How to set up a Many-Many Relationship
 * [One to Many Relationships](https://docs.djangoproject.com/en/3.2/topics/db/models/#many-to-one-relationships) - How to add a foreign key to a model
-* [Many to Many Relationships](https://docs.djangoproject.com/en/3.2/topics/db/models/#many-to-many-relationships) - How to set up a Many-Many Relationship

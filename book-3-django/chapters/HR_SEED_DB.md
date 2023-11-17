@@ -10,11 +10,9 @@ In this chapter, you are going to set up your project with some fixtures so that
 
 ## Setup
 
-Be in the `repairsapi` directory and run the following commands to create the fixtures directory and the JSON files you will need.
+Be in the `repairsapi/fixtures` directory and run the following commands to create the JSON files you will need to seed your database with some starter data.
 
 ```sh
-mkdir fixtures
-cd fixtures
 touch customers.json
 touch employees.json
 touch tickets.json
@@ -273,6 +271,8 @@ Copy the following JSON into the `tokens.json` file.
 
 Copy the following JSON into the `users.json` file.
 
+> 🧨 The passwords are encrypted, so note that each user's password is their last name - all lowercase.
+
 <details>
 <summary>Expand to get the JSON data</summary>
 
@@ -393,29 +393,13 @@ Copy the following JSON into the `users.json` file.
 
 ## Database Seeding Bash Script
 
-Make sure you back in the main project directory of `honey-rae-server`.
-
 1. Open the file named `seed_database.sh`.
-2. Copy pasta the following content into it.
+2. Add the following commands at the end of the file. Don't remove anything that is already there.
    ```sh
-   #!/bin/bash
-
-   rm db.sqlite3
-   rm -rf ./repairsapi/migrations
-   python3 manage.py migrate
-   python3 manage.py makemigrations repairsapi
-   python3 manage.py migrate repairsapi
-   python3 manage.py loaddata users
-   python3 manage.py loaddata tokens
    python3 manage.py loaddata customers
    python3 manage.py loaddata employees
    python3 manage.py loaddata tickets
    ```
-3. Run the following command in your terminal. It makes the file an [executable script](https://linuxhandbook.com/make-file-executable/).
-    ```sh
-    chmod u+x ./seed_database.sh
-    ```
-
 ## Seed Your Database
 
 Now you can run that script any time you want to start from scratch with the initial data in your database.
