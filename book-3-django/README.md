@@ -21,22 +21,28 @@ Before moving on to the next book, build up your SQL skills a bit more. SQL is a
 | 4 | [Views][6] <br/> <sub style="font-size:0.85rem;">\#viewset</sub> | [Types View][14] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Getting Categories][24] |
 | 5 | [Serializers][7] <br/> <sub style="font-size:0.85rem;">\#serializer</sub> | [Rocks View][15] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Handling Book Requests][25] |
 | 6 | [URLs][8] <br/> <sub style="font-size:0.85rem;">\#routes</sub> | [Database Fixtures][16] <br/> <sub style="font-size:0.85rem;">\#fixtures \#database</sub> | [Reviewing Books][26] |
-| 7 | [Your First Migration][9] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Expand Rock Type and User][17] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | [Reader's Digest Client][27] |
+| 7 | [Your First Migration][9] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Expand Rock Type and User][17] <br/> <sub style="font-size:0.85rem;">\#viewset \#serializer</sub> | |
 | 8 | [Make an Appointment][10] <br/> <sub style="font-size:0.85rem;">\#database \#migration</sub> | [Creating Rocks][18] <br/> <sub style="font-size:0.85rem;">\#POST</sub> |  |
 | 9 |  | [Deleting Rocks][19] <br/> <sub style="font-size:0.85rem;">\#DELETE</sub> |  |
 | 10 |  | [Only My Rocks][20] <br/> <sub style="font-size:0.85rem;">\#filter \#query-params</sub> |  |
 
 Once you have completed all of the Core Projects, your job is to do a self-assessment of your understanding and competencies that you have built so far during your time at NSS. When you are ready to discuss, reach out to an instructor.
 
-| #   | 🎓 Reflections |
+| #   | 🎓 Django Reflections |
 | --- | --- |
-| 1   | [Full Stack Reflections][28] |
+| 1   | [TODO: Reflections on Django][28] |
 
-## 🔐 Deep Learning Group Project Unlocked
+
+## 🔐 Group Project Over 4 Sprints
 
 | # | Project&nbsp;Name | Description |
 |--|--|--|
-| 👨‍👩‍👧‍👧 | [Rare - The REST API][29] | When you complete LevelUp, you will join some teammates to build a content management platform called Rare. You will build a client in React, and the API with Django REST. |
+| 👨‍👩‍👧‍👧 | [???? - The REST API][29] | Lorem ipsum. |
+
+| #   | 🎓 Full Stack Reflections |
+| --- | --- |
+| 1   | [TODO: Full Stack Reflections][30] |
+
 
 [1]: https://mystery.knightlab.com/
 [2]: ./chapters/SQL_REFRESH.md
@@ -69,5 +75,6 @@ Once you have completed all of the Core Projects, your job is to do a self-asses
 [26]: ./chapters/RD_REVIEWS.md
 [27]: ./chapters/RD_CLIENT.md
 
-[28]: ./chapters/DJANGO_RELFECTION.md
+[28]: ./chapters/DJANGO_REFLECTIONS.md
 [29]: ./chapters/RARE_REST.md
+[30]: ./chapters/FULL_STACK_REFLECTIONS.md

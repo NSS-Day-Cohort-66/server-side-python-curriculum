@@ -13,32 +13,32 @@ Before you start building projects that serve as APIs for your client code to in
 
 Now that you have had an introduction to SQL, it's time to combine your nascent understanding of Python and SQL and start building your first APIs. You will explore the Shipping Ships API as a team first, and then break off on your won to build the Kneel Diamonds API.
 
-| # | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Imperative Code_)</sub> | 🛳️ ⛴️ <br/> Shipping Ships API <br/><sub>(_Declarative Code_)</sub> | 💎 💍 <br/> Kneel Diamonds <br/><sub>(_Your Code Style_)</sub> |
-|--|--|--|--|
-| 1 | [Debugging Python in Visual Studio Code][3] | [Digging Deeper on Declarative][9] | [Review ERD][24] |
-| 2 | [Get the Code][4]| [Get the Code][10] | [Project Setup][19] |
-| 3 | [Create the Database][5] | [Create the Database][11] | [Database Setup][20] |
-| 4 |  [Exploring the API][6] | [Exploring the API][12] | [Project Requirements][21] |
-| 5 | [API Sequence Diagram][7] | [API Sequence Diagram][13] |  |
-| 6 | [Who Carries the Ship?][15] | [Hauler and its Dock][18] |  |
-| 7 | [Creating Resources][8] | [Creating Resources][14] |  |
-| 8 | | [Shipping Ships Client][28] |  |
+| # | 🛳️ ⛴️ <br/> Shipping Ships API |  💎 💍 <br/> Kneel Diamonds |
+|--|--|--|
+| 1 | [Debugging Python in Visual Studio Code][3] | Grab |
+| 2 | [Get the Code][4]| From |
+| 3 | [Create the Database][5] | Main |
+| 4 |  [Exploring the API][6] | Branch |
+| 5 | [API Sequence Diagram][7] | |
+| 6 | [Who Carries the Ship?][15] | |
+| 7 | [Creating Resources][8] | |
 
 Once you have completed all of the Core Projects, your job is to do a self-assessment. Click on the link below to see what this book's assessment instructions are. Once complete, reach out to an instructor to review your vocabulary.
 
-| #   | 🎓 Self-Assessment |
+| #   | 🎓 Python and SQL Reflections |
 | --- | --- |
 | 1   | [Assess Your Competencies in Python and SQL](./chapters/PYTHON_SQL_REFLECTIONS.md) |
 
-## 🧭 Explorer Chapters
+## 🔐 Group Project Over 2 Sprints
 
-Explorer chapters are optional and give you the opportunity to expand on the Core chapters and the concepts in the book.
+| # | Project | Description |
+|--|--|--|
+|1| [Rare Publishing Platform][29] | Your first, large full-stack group project. You will be building an API service with Python, and using SQL to manage the permanent state in your database. |
 
-| #  | 💎 💍  <br/> Kneel Diamonds |
-|--|--|
-| 1 | [Sort Resources by Price][29] |
-| 2 | [Get Orders by Metal, Style, or Size][30] |
-| 3 | [Accept Headers][31] |
+
+| #   | 🎓 API Reflections |
+| --- | --- |
+| 1   | [Assess Your Understanding of API Concepts](./chapters/API_REFLECTIONS.md) |
 
 
 [1]:    https://www.khanacademy.org/computing/computer-programming/sql
@@ -65,9 +65,5 @@ Explorer chapters are optional and give you the opportunity to expand on the Cor
 [26]:	./chapters/KD_EC_404.md
 [27]:	./chapters/KD_EC_400.md
 [28]:	./chapters/SS_API_CLIENT.md
-[29]:	./chapters/KD_EC_SORT_BY_PRICE.md
-[30]:	./chapters/KD_EC_FILTER_ORDER_BY_RESOURSE.md
-[31]:	./chapters/KD_EC_ACCEPT_HEADERS.md
-[38]:	./chapters/RARE.md
-[39]:	./chapters/ADVENTURE_GUIDELINES.md
+[29]:	./chapters/RARE.md
 

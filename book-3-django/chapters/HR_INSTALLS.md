@@ -10,4 +10,3 @@
    ```
 6. Once the process completes, run `pipenv shell` to activate the virtual environment that was created for your project.
 7. Open the project in Visual Studio Code.
-

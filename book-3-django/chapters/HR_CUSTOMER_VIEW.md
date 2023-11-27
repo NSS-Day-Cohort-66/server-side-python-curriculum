@@ -1,72 +1,12 @@
 # Getting All Customers from the API
 
-You will be creating a _View_ in this chapter. In Django, the _View_ handles the request from the client, does the work to get the requested data, and sends a response back to the client.
-
-## Customer View
-
-Inside the `views` folder create a file named `customer_view.py`. Here’s the view skeleton with the imports and methods we’ll add to next:
-
-#### `honey-rae-server/repairsapi/views/customer_view.py`
-
-```py
-"""View module for handling requests for customer data"""
-from django.http import HttpResponseServerError
-from rest_framework.viewsets import ViewSet
-from rest_framework.response import Response
-from rest_framework import serializers, status
-from repairsapi.models import Customer
-
-
-class CustomerView(ViewSet):
-    """Honey Rae API customers view"""
-
-    def list(self, request):
-        """Handle GET requests to get all customers
-
-        Returns:
-            Response -- JSON serialized list of customers
-        """
-
-        customers = Customer.objects.all()
-        serialized = CustomerSerializer(customers, many=True)
-        return Response(serialized.data, status=status.HTTP_200_OK)
-
-    def retrieve(self, request, pk=None):
-        """Handle GET requests for single customer
-
-        Returns:
-            Response -- JSON serialized customer record
-        """
-
-        customer = Customer.objects.get(pk=pk)
-        serialized = CustomerSerializer(customer, context={'request': request})
-        return Response(serialized.data, status=status.HTTP_200_OK)
-
-
-class CustomerSerializer(serializers.ModelSerializer):
-    """JSON serializer for customers"""
-    class Meta:
-        model = Customer
-        fields = ('id', 'user', 'address')
-```
-
-## Add View to Package
-
-#### `honey-rae-server/repairsapi/views/__init__.py`
-
-```py
-from .customer_view import CustomerView
-```
+1. Create a **CustomerView** that implements **list** and **retrieve**. No special conditions need to be accounted for.
+2. Create a **CustomerSerializer** that includes all three fields from the customer model.
+3. Add the view class to the **views** package.
 
 ## Adding the URL
 
-So far we’ve set up the view and serializer but not which URL to use for the view. We need to add `/customers` to be supported by the API.
-
-If a client sends a `GET` request to either `http://localhost:8000/customers` or `http://localhost:8000/customers/1`, we want the server to respond with the appropriate method.
-
-You will use a built-in class in Django REST called the `DefaultRouter`. The `DefaultRouter` sets up the resource for each method that is present on the view.
-
-> #### `honey-rae-server/honeyrae/urls.py`
+In the `urls.py` module, you have already setup the login and register routes, but from there on out you will be using the **DefaultRouter** to establish the remaining routes.
 
 Add the following import statements at the top of the `urls.py` module.
 
@@ -82,13 +22,8 @@ In the same file, above the current `urlpatterns` variable, add the following:
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'customers', CustomerView, 'customer')
 ```
-The `trailing_slash=False` tells the router to accept `/customers` instead of `/customers/`. It’s a very annoying error to come across, when your server is not responding and the code _looks_ right, the only issue is your fetch url is missing a `/` at the end.
 
-The next line is what sets up the `/customers` resource. The first parameter, `r'customers`, is setting up the URL. The second `CustomerView` is telling the server which view to use when it sees that url.
-
-The third, `customer`, is called the base name. You’ll only see the base name if you get an error in the server. It acts as a nickname for the resource and is usually the singular version of the URL.
-
-Last step, once the `router` variable is set, we need to add it to the `urlpatterns`. Anywhere inside the `urlpatterns` list add the following line.
+Lastly, we need to add all routes registered with the default router it to the `urlpatterns`. Anywhere inside the `urlpatterns` list add the following line.
 
 ```py
 path('', include(router.urls)),
