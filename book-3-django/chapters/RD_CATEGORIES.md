@@ -57,7 +57,12 @@ router.register(r'categories', CategoryViewSet, 'category')
 
 ## Create Fixtures
 
-Now create a `digestapi/fixtures/categories.json` file, add some fixtures and load them into the database. Create about 5.
+Now create a `digestapi/fixtures/categories.json` file, add some fixtures and load them into the database.
+
+Create about 5.
+
+Once you have fixtures, update the `seed_database.sh` script to load them. Then run the seed script to start from scratch.
+
 
 ## Reference
 
