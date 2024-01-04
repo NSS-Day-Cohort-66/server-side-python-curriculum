@@ -2,6 +2,8 @@
 
 ## Overview
 
+First, if you haven't used Digital Ocean yet, [sign up for $100 credit](https://m.do.co/c/47e5e578d1cd).
+
 To deploy your Django REST API to the cloud, you are going use the Digital Ocean platform. Be aware that deploying any non-static application will incur some costs - on any platform. For Digital Ocean, the cost is $5.00/month 💰 💰, so if you are unwilling or unable to take on that cost, do not follow these steps.
 
 ## Settings
