@@ -11,7 +11,7 @@ Deploying your first three static sites is cost free on Digital Ocean. Your Reac
 3. Click the Github icon.
 4. Choose your repository from the search field that appears.
 5. Click next.
-6. It will auto-detect that you're trying to deploy a **Static Site** and all of the defaults should be unchanged.
+6. It will auto-detect that you're trying to deploy a **Static Site** and all of the defaults should be unchanged. If it doesn't edit the project to change its type from **Web Service** to **Static Site**.
     > Note: If you get a message that it could not find an app in your repo, type `/src` in the "Source directory" field and click "Find directory".
 7. Click next.
 8. Type in an app name like "sinks-steve" or anything else that works.
