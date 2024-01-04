@@ -11,6 +11,7 @@ Next, you need to define the environment variables you declared in your projectâ
     Set this to **True** for now to verify your app is functioning and set to **False** later once everything is working.
 
 * `DJANGO_SECRET_KEY` -> `<A RANDOM SECRET KEY>`
+* `DISABLE_COLLECTSTATIC` -> `1`
 
     Again, you can use the [Online UUID Generator](https://www.uuidgenerator.net/) to generate a random secret key. Donâ€™t forget to click the Encrypt check box to ensure that your credentials are encrypted for safety.
 
