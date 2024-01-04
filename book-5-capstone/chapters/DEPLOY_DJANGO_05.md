@@ -2,7 +2,7 @@
 
 Next, you need to define the environment variables you declared in your project’s settings. For your Django app to function, you need to set the following environment variables like so:
 
-* `DJANGO_ALLOWED_HOSTS` -> `${APP_DOMAIN}`
+* `DJANGO_ALLOWED_HOSTS` -> `${APP_DOMAIN},localhost,127.0.0.1`
 
     This allows the platform to know the randomly generated URL that App Platform provides and provide it to your app.
 
