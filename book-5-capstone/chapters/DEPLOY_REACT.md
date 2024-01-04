@@ -20,3 +20,11 @@ Deploying your first three static sites is cost free on Digital Ocean. Your Reac
 11. Click **Launch Starter App**.
 
 Now wait for a few minutes while your application is built and deployed. Once successful, you can click on the link they provide and see your site!
+
+## Updating API To Support New Client
+
+Go to your API app on Digital Ocean. Update the environment variables to add this new one.
+
+| Variable name | Value | 
+|---|--|
+| ALLOWED_HOSTS | localhost,127.0.0.1,&lt;domain name of your new client app on digital ocean&gt; _(don't include the brackets)_ |
