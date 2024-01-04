@@ -25,11 +25,11 @@ Now wait for a few minutes while your application is built and deployed. Once su
 
 1. Copy the new domain that your app is deployed to
 2. Go to your API app on Digital Ocean.
-3. Update the environment variables to add this new one.
+3. Update the environment variables to update this one.
 
 | Variable name | Value | 
 |---|--|
-| DJANGO_ALLOWED_HOSTS | localhost,127.0.0.1,&lt;new client domain name&gt; |
+| DJANGO_ALLOWED_HOSTS | ${APP_DOMAIN},localhost,127.0.0.1,&lt;new client domain name&gt; |
 
 4. Then go to your API project in VS Code and open `settings.py`.
 5. Find the `CORS_ORIGIN_WHITELIST` section.
