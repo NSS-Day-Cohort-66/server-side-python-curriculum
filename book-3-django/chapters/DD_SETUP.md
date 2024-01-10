@@ -13,7 +13,7 @@ pipenv shell
 Run the following command in your terminal and wait for the entire process to complete.
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/NSS-Day-Cohort-66/server-side-python-curriculum/shipping-ships-version/book-3-django/chapters/scripts/deshawn-setup.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/main/python/deshawn-setup.sh)"
 ```
 
 Once that's done, open up the directory in VS Code.

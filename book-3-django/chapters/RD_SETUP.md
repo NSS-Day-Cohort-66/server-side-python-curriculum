@@ -6,7 +6,7 @@
 4. You are going to run a script that prompts you for a word for your project. When it prompts you, enter the word **digest**.
 5. Run the following command in the terminal and enter **digest** when prompted.
    ```sh
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/NSS-Day-Cohort-66/server-side-python-curriculum/shipping-ships-version/book-5-capstone/chapters/scripts/capstone-setup.sh)"
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nashville-software-school/course-bash-scripts/main/python/django-setup.sh)"
    ```
 6. Once the process completes, run `pipenv shell` to activate the virtual environment that was created for your project.
 7. Open the project in Visual Studio Code.
