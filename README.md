@@ -19,7 +19,7 @@ Run the appropriate script in one of your terminal windows. Location is irreleva
 ```
 
 After running this script, if you **do** **not** see a message that says "Success! You are ready to start coding with Python", reach out to an instructor.
-To make sure the script was actually successful run `python3 --version` if you do not get a number that starts with 3.9, close the terminal, reopen and try that command again. If it still does not show 3.9 let an instructor know.
+To make sure the script was actually successful run `python3 --version` if you do not get a number that starts with 3, close the terminal, reopen and try that command again. If the version still does not start with 3, let an instructor know.
 
 ## Python Formatting
 
