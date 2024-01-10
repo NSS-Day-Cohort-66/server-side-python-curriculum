@@ -29,9 +29,3 @@ To make sure the script was actually successful run `python3 --version` if you d
 4. Type "python format" in the settings search
 5. In the **Editor: Default Formatter** section, choose _Black Formatter_ as the default formatter.
 6. You can close the settings window now.
-
-## Quick Introduction to Python
-
-As an optional primer for this course, you can go through the [Learn Python For Free](https://scrimba.com/course/gpython) course on Scrimba. It's an interactive course that goes through all of the basic syntax of the language.
-
-There's also this tutorial from Microsoft to get started with Python Basics _(skip the installations chapter)_: https://docs.microsoft.com/en-us/learn/paths/python-first-steps/
