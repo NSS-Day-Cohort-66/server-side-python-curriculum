@@ -21,6 +21,15 @@ Once you have completed the project, your job is to do a self-assessment. This i
 | --- | ------------------ |
 | 1   | [Reflect on what you learned about Python and SQL](./chapters/INITIAL_REFLECTIONS.md) |
 
+## 🔐 Group Project
+
+Once everyone has had their reflections interview with a coach, we will start on a major group project that will span multiple Sprints.
+
+| # | Project&nbsp;Name | Description |
+|--|--|--|
+|1| [Rare Publishing Platform][28] | Your first, large full-stack group project. You will be building an API service with Python, and using SQL to manage the permanent state in your database. |
+
+
 [1]:	./chapters/CC_PROJECT_SETUP.md
 [2]:	./chapters/CC_CLASSES.md
 [3]:	./chapters/CC_CONSTRUCTORS.md
@@ -48,3 +57,4 @@ Once you have completed the project, your job is to do a self-assessment. This i
 [25]:   ./chapters/PYTHON_DICTIONARIES.md
 [26]:   ./chapters/PYTHON_FUNCTIONS.md
 [27]:   ./chapters/PYTHON_EXCEPTIONS.md
+[28]:   ./chapters/RARE.md
