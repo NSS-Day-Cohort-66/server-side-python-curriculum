@@ -1,9 +1,5 @@
 # Introduction to API Servers
 
-Before you begin work on this project, please read the [Object-Oriented Programming in Python](https://realpython.com/python3-object-oriented-programming/). It provides a wonderful, high-level overview of the terms, the syntax and the concepts behind OOP. We also recommend that you bookmark that article for future reference.
-
-After reading the above article, you can practice your Python in the context of learning how to create your own custom types, and learn the basics of inheritance.
-
 | # | Python Quick Intro | 🐑 🦆 <br/> Critters and Croquettes | 🧑🏽‍💻 SQL Intro |🛳️ ⛴️ <br/> Shipping Ships |  💎 💍 <br/> Kneel Diamonds |
 |--|--|--|--|--|--|
 | 1 | [Python Lists][24] | [Meeting Bobby Kawlins][1] | [Khan Academy: Intro to SQL][14] | [Debugging Python in Visual Studio Code][7] | [Project Setup][16]|

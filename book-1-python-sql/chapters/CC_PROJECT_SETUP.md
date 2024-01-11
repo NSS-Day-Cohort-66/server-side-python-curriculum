@@ -12,4 +12,10 @@ Lets build some classes for a business that's poised to become the #1 tourist tr
 >
 > "Exactly!" says Bobby.
 
+
+Before you begin work on this project, please read the [Object-Oriented Programming in Python](https://realpython.com/python3-object-oriented-programming/). It provides a wonderful, high-level overview of the terms, the syntax and the concepts behind OOP. We also recommend that you bookmark that article for future reference.
+
+After reading the above article, you can practice your Python in the context of learning how to create your own custom types, and learn the basics of inheritance.
+
+
 [Move to next chapter >](./CC_CLASSES.md)
